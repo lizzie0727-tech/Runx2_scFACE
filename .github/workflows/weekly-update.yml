@@ -1,0 +1,23 @@
+name: RUNX2 weekly verified-metadata update
+on:
+  schedule:
+    # Wednesday 08:00 Korea (UTC+9) = Tuesday 23:00 UTC
+    - cron: '0 23 * * 2'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Import DOI + PMID confirmed papers
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          NCBI_CONTACT_EMAIL: ${{ secrets.NCBI_CONTACT_EMAIL }}
+        run: python automation/update_papers.py
