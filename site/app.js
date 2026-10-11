@@ -26,10 +26,97 @@ async function handleCard(e){let cardEl=e.target.closest('[data-id]');if(!cardEl
  if(e.target.matches('.openPdf')){let {data,error}=await client.storage.from('paper-pdfs').list(`${user.id}/${id}`,{limit:100});if(error)throw error;if(!data?.length)return toast('这篇文章还没有上传 PDF');let latest=[...data].sort((a,b)=>b.name.localeCompare(a.name))[0];let path=`${user.id}/${id}/${latest.name}`;let signed=await client.storage.from('paper-pdfs').createSignedUrl(path,120);if(signed.error)throw signed.error;window.open(signed.data.signedUrl,'_blank','noopener');}
  if(e.target.matches('.extractPdf')){let file=cardEl.querySelector('.pdfFile').files[0];if(!file)return toast('请先选择本机 PDF');if(!window.pdfjsLib)return toast('PDF 阅读组件未加载，请联网后重试');pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';let pdf=await pdfjsLib.getDocument({data:new Uint8Array(await file.arrayBuffer())}).promise;let parts=[];for(let i=1;i<=Math.min(pdf.numPages,20);i++){let page=await pdf.getPage(i);let txt=await page.getTextContent();parts.push(`Page ${i}:\n`+txt.items.map(x=>x.str).join(' '));}let box=cardEl.querySelector('.pdfText');box.classList.remove('hidden');box.value=parts.join('\n\n');toast(`已提取前 ${Math.min(pdf.numPages,20)} 页文本（不支持扫描版 OCR）`);}
  }catch(err){toast('操作失败：'+err.message);}}
-async function start(){if(!configured||!window.supabase){$('authMsg').textContent='请先配置 site/config.js 中的 Supabase URL 和公开 anon key，并确保可以访问 Supabase JS。';return;}client=supabase.createClient(cfg.supabaseUrl,cfg.supabaseAnonKey);client.auth.onAuthStateChange((_event,session)=>{setTimeout(()=>updateSession(session),0);});const {data}=await client.auth.getSession();await updateSession(data.session);}
-async function updateSession(session){const next=session?.user||null;if(next?.id===user?.id)return;user=next;$('login').classList.toggle('hidden',!!user);$('app').classList.toggle('hidden',!user);$('signout').classList.toggle('hidden',!user);if(user){try{await load();}catch(e){toast('数据库加载失败：'+e.message);}}}
-$('loginBtn').onclick=async()=>{if(!client)return toast('请先配置 Supabase');let email=$('email').value.trim();if(!email)return toast('请输入邮箱');$('loginBtn').disabled=true;const {error}=await client.auth.signInWithOtp({email,options:{emailRedirectTo: location.origin + '/scFACE/'+location.pathname,shouldCreateUser:false}});$('loginBtn').disabled=false;$('authMsg').textContent=error?'登录失败：'+error.message:'登录邮件已发送，请查看邮箱。';};
-$('signout').onclick=async()=>{await client?.auth.signOut();user=null;$('login').classList.remove('hidden');$('app').classList.add('hidden');$('signout').classList.add('hidden');};
+
+async function start() {
+  if (!configured || !window.supabase) {
+    $('authMsg').textContent =
+      '请先配置 site/config.js 中的 Supabase URL 和公开 anon key，并确保可以访问 Supabase JS。';
+    return;
+  }
+
+  client = supabase.createClient(
+    cfg.supabaseUrl,
+    cfg.supabaseAnonKey
+  );
+
+  client.auth.onAuthStateChange((_event, session) => {
+    setTimeout(() => updateSession(session), 0);
+  });
+
+  const { data } = await client.auth.getSession();
+  await updateSession(data.session);
+}
+
+async function updateSession(session) {
+  const next = session?.user || null;
+
+  if (next?.id === user?.id) return;
+
+  user = next;
+
+  $('login').classList.toggle('hidden', !!user);
+  $('app').classList.toggle('hidden', !user);
+  $('signout').classList.toggle('hidden', !user);
+
+  if (user) {
+    try {
+      await load();
+    } catch (e) {
+      toast('数据库加载失败：' + e.message);
+    }
+  }
+}
+
+// 邮箱 + 密码登录
+$('loginBtn').onclick = async () => {
+  if (!client) {
+    return toast('请先配置 Supabase');
+  }
+
+  const email = $('email').value.trim();
+  const password = $('loginPassword').value;
+
+  if (!email) {
+    return toast('请输入邮箱');
+  }
+
+  if (!password) {
+    return toast('请输入密码');
+  }
+
+  $('loginBtn').disabled = true;
+  $('authMsg').textContent = '正在登录...';
+
+  try {
+    const { error } = await client.auth.signInWithPassword({
+      email,
+      password
+    });
+
+    if (error) {
+      $('authMsg').textContent = '登录失败：' + error.message;
+    } else {
+      $('authMsg').textContent = '';
+      $('loginPassword').value = '';
+    }
+  } catch (e) {
+    $('authMsg').textContent = '登录失败：' + e.message;
+  } finally {
+    $('loginBtn').disabled = false;
+  }
+};
+
+// 退出登录
+$('signout').onclick = async () => {
+  await client?.auth.signOut();
+
+  user = null;
+
+  $('login').classList.remove('hidden');
+  $('app').classList.add('hidden');
+  $('signout').classList.add('hidden');
+};
+
 for(let id of ['search','topic','status','stars'])$(id).addEventListener(id==='search'?'input':'change',render);
 for(const area of ['cards','detailView']){$(area).addEventListener('click',handleCard);$(area).addEventListener('change',e=>{if(e.target.matches('.readStatus'))handleCard(e);});}window.addEventListener('hashchange',showRoute);
 $('exportBtn').onclick=()=>{let content=JSON.stringify({exported_at:new Date().toISOString(),progress:[...progress.entries()].map(([paper_id,x])=>({paper_id,status:x.status,notes:x.notes}))},null,2);let a=document.createElement('a');a.href=URL.createObjectURL(new Blob([content],{type:'application/json'}));a.download='RUNX2_reading_progress.json';a.click();URL.revokeObjectURL(a.href);};
