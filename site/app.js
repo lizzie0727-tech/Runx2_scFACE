@@ -34,42 +34,55 @@ function stats(){let counts={unread:0,reading:0,read:0};papers.forEach(p=>counts
 function figCard(c){return `<div class="figure"><b>${esc(c.figure||'Figure / panel 待核实')}</b><div><b>Method：</b>${esc(c.method)}</div>${c.detail?`<div><b>内容：</b>${esc(c.detail)}</div>`:''}<div><b>对 RUNX2 的价值：</b>${esc(c.why)}</div><small>${esc(c.verification||'具体图号待核实')}</small></div>`;}
 function card(p){const s=statusOf(p.id);return `<article class="card" data-id="${esc(p.id)}"><div class="row"><span class="tag">${esc(p.topic)}</span><span class="stars">${'★'.repeat(p.stars)}${'☆'.repeat(5-p.stars)}</span></div><h3>${esc(p.title)}</h3><div class="meta">${esc(p.authors)} · ${esc(p.journal)} · ${esc(p.publication_year)}</div>${verificationLabel(p)?`<p class="small"><span class="pill">${verificationLabel(p)}</span></p>`:""}<p><b>Key finding：</b>${esc(p.key_finding)}</p><p><b>RUNX2 relevance：</b>${esc(p.runx2_value)}</p><div class="row"><a class="detailLink primaryLink" href="#paper/${encodeURIComponent(p.id)}">打开详细学习页面 →</a><select class="readStatus" aria-label="阅读状态"><option value="unread" ${s==='unread'?'selected':''}>未读</option><option value="reading" ${s==='reading'?'selected':''}>在读</option><option value="read" ${s==='read'?'selected':''}>已读</option></select></div></article>`;}
 function verificationLabel(p){return p.verification_status==='original_figures_checked'?'原始 Figure 已核对':p.verification_status==='paper_confirmed_figure_pending'?'Figure 待核对':'';}
-function aiResultSection(id){
- const record=analyses.get(id), job=analysisJobs.get(id);
- const a=record?.result;
- const status=job?.status==='running'?'AI 正在阅读全文及图像，请稍后刷新状态…':job?.status==='failed'?'分析失败：'+(job.error||'请重试'):a?'已保存 AI 全文分析':'尚未分析 PDF';
- const figures=Array.isArray(a?.figure_cards)?a.figure_cards:[];
- const items=figures.map(c=>`<div class="figure"><b>${esc(c.figure||'Figure 未核实')}</b><p><b>Question：</b>${esc(c.question)}</p><p><b>Methods：</b>${esc(c.method)}</p><p><b>Results：</b>${esc(c.result)}</p><p><b>Evidence：</b>${esc(c.evidence)}</p><p><b>RUNX2 relevance：</b>${esc(c.why)}</p><small>${esc(c.verification)}</small></div>`).join('');
- return `<section class="detailSection aiAnalysis"><h3>AI Full-text Learning Guide</h3><p class="muted">${esc(status)}。AI 内容仅供学习，图号和结论请对照 PDF 核实。</p><div class="row"><button class="analyzeLatest primary" type="button">分析最近上传的 PDF</button><button class="refreshAnalysis" type="button">刷新分析状态</button></div>${a?`<p><b>Key Finding：</b>${esc(a.key_finding)}</p><p><b>Methods：</b>${esc(a.methods)}</p><p><b>Why It Matters to RUNX2：</b>${esc(a.runx2_value)}</p><p><b>Figure Learning Guide：</b>${esc(a.figures)}</p>${items}<p class="muted">${esc(a.limitations||'')}</p><small>来源：私人 PDF · ${esc(record.updated_at||'')}</small>`:''}</section>`;
+function manualGuide(id){
+ const record=analyses.get(id),a=record?.result||{},cards=Array.isArray(a.figure_cards)?a.figure_cards:[];
+ const fields=[['key_finding','Key Finding','总结论文主要发现，注意区分原文证据与自己的推测'],['methods','Methods','样本、分组、实验方法、分析方法及局限性'],['figures','Figure Learning Guide · 总览','梳理各图之间的逻辑；具体 Figure 可在下方逐张添加'],['runx2_value','Why It Matters to RUNX2','联系 OP–UCM、E12.5–E14.5、CCI、Visium HD 等研究问题'],['limitations','Evidence & Limitations','尚未验证的图号、证据边界、未来实验思路']];
+ const inputs=fields.map(([key,label,placeholder])=>`<label class="manualField"><b>${label}</b><textarea data-guide-field="${key}" rows="4" placeholder="${esc(placeholder)}">${esc(a[key]||'')}</textarea></label>`).join('');
+ const figureHtml=cards.map((c,i)=>`<div class="figure manualFigure" data-figure-index="${i}"><div class="row"><b>${esc(c.figure||'Figure '+(i+1))}</b><button type="button" class="deleteGuideFigure" data-figure-index="${i}">删除此 Figure</button></div><p><b>Question：</b>${esc(c.question)}</p><p><b>Methods：</b>${esc(c.method)}</p><p><b>Results：</b>${esc(c.result)}</p><p><b>Evidence：</b>${esc(c.evidence)}</p><p><b>RUNX2 relevance：</b>${esc(c.why)}</p><small>${esc(c.verification||'待核对原文')}</small></div>`).join('');
+ return `<section class="detailSection manualGuide"><h3>Full-text Learning Guide · 我的论文学习卡片</h3><p class="muted">无需 AI API。你可以在 ChatGPT 中分析 PDF，再将整理结果复制到这里。内容仅自己可见，点击保存后会存入 Supabase。</p>${inputs}<button type="button" class="saveManualGuide primary">保存学习指南</button><p class="muted guideSaveStatus">${record?'已有保存的学习指南，可以继续编辑。':'尚未填写学习指南。'}</p><h3>逐图学习卡片</h3><div class="guideFigureCards">${figureHtml||'<p class="muted">还没有 Figure 卡片。</p>'}</div><div class="guideFigureForm"><label>图号<input data-figure-field="figure" placeholder="Figure 1 / Supplementary Figure S1"></label><label>Question<textarea data-figure-field="question" rows="2" placeholder="这张图回答什么问题？"></textarea></label><label>Methods<textarea data-figure-field="method" rows="2" placeholder="使用了哪些实验或分析？"></textarea></label><label>Results<textarea data-figure-field="result" rows="2" placeholder="图中直接观察到什么？"></textarea></label><label>Evidence<textarea data-figure-field="evidence" rows="2" placeholder="具体 panel、统计与对照；没有核实就标记待核实"></textarea></label><label>RUNX2 relevance<textarea data-figure-field="why" rows="2" placeholder="这张图对你的 RUNX2 研究有什么启发？"></textarea></label><label>核实状态<input data-figure-field="verification" placeholder="已核对 PDF / 图号待核实"></label><button type="button" class="addGuideFigure primary">＋ 添加并保存 Figure 卡片</button></div></section>`;
 }
-async function refreshAnalysis(id){
- const [a,b]=await Promise.all([client.from('paper_ai_analyses').select('paper_id,result,updated_at').eq('paper_id',id).maybeSingle(),client.from('paper_ai_jobs').select('paper_id,status,error,updated_at').eq('paper_id',id).maybeSingle()]);
- if(a.error||b.error)throw Error(a.error?.message||b.error?.message);
- if(a.data)analyses.set(id,a.data);if(b.data)analysisJobs.set(id,b.data);
- const p=papers.find(x=>String(x.id)===String(id));if(p&&location.hash==='#paper/'+encodeURIComponent(id)){$('detailView').innerHTML=detailPage(p);}
-}
-async function analyzePdf(id,path){
- const {data,error}=await client.functions.invoke('analyze-paper',{body:{paper_id:id,storage_path:path}});
- if(error)throw Error(error.message||'Edge Function 调用失败');
- if(!data?.ok)throw Error(data?.error||'分析请求未被接受');
- toast('AI 分析任务已提交，完成后将自动保存');
- await refreshAnalysis(id);
- pollAnalysis(id);
-}
-async function latestPdfPath(id){
- const {data,error}=await client.storage.from('paper-pdfs').list(`${user.id}/${id}`,{limit:100});
- if(error)throw error;if(!data?.length)throw Error('请先上传 PDF');
- const files=data.filter(x=>x.name?.toLowerCase().endsWith('.pdf')).sort((a,b)=>b.name.localeCompare(a.name));
- if(!files.length)throw Error('没有找到 PDF');
- return `${user.id}/${id}/${files[0].name}`;
-}
-async function pollAnalysis(id){
- for(let i=0;i<60;i++){
-   await new Promise(resolve=>setTimeout(resolve,5000));
-   if(!user)return;
-   try{await refreshAnalysis(id);const state=analysisJobs.get(id)?.status;if(state==='done'||state==='failed'){toast(state==='done'?'AI 全文分析已保存':'AI 分析失败，请查看详情');return;}}catch{}
+async function refreshGuide(id){
+ const {data,error}=await client.from('paper_ai_analyses').select('paper_id,result,updated_at,storage_path,model').eq('paper_id',id).eq('user_id',user.id).maybeSingle();
+ if(error)throw error;
+ if(data)analyses.set(id,data);else analyses.delete(id);
+ const p=papers.find(x=>String(x.id)===String(id));
+ if(p&&location.hash==='#paper/'+encodeURIComponent(id)){
+  const section=$('detailView').querySelector('.manualGuide');if(section)section.outerHTML=manualGuide(id);
  }
- toast('分析仍在进行，请稍后点击刷新分析状态');
+}
+async function persistGuide(id,result){
+ const old=analyses.get(id);
+ const row={user_id:user.id,paper_id:id,storage_path:old?.storage_path||'manual-guide',model:'manual',result,updated_at:new Date().toISOString()};
+ const {error}=await client.from('paper_ai_analyses').upsert(row,{onConflict:'user_id,paper_id'});
+ if(error)throw Error('保存学习指南失败：'+error.message);
+ analyses.set(id,row);
+}
+function guideFormData(section){
+ const out={...(analyses.get(section.closest('[data-id]').dataset.id)?.result||{})};
+ section.querySelectorAll('[data-guide-field]').forEach(el=>out[el.dataset.guideField]=el.value.trim());
+ if(!Array.isArray(out.figure_cards))out.figure_cards=[];
+ return out;
+}
+async function saveGuide(id,cardEl){
+ const section=cardEl.querySelector('.manualGuide');
+ await persistGuide(id,guideFormData(section));
+ section.querySelector('.guideSaveStatus').textContent='已保存 · '+new Date().toLocaleString('zh-CN');
+ toast('学习指南已保存');
+}
+async function addGuideFigure(id,cardEl){
+ const section=cardEl.querySelector('.manualGuide'),result=guideFormData(section),figure={};
+ section.querySelectorAll('[data-figure-field]').forEach(el=>figure[el.dataset.figureField]=el.value.trim());
+ if(!figure.figure)throw Error('请先填写图号，例如 Figure 1');
+ result.figure_cards.push(figure);
+ await persistGuide(id,result);
+ section.outerHTML=manualGuide(id);toast('Figure 卡片已保存');
+}
+async function deleteGuideFigure(id,index,cardEl){
+ if(!confirm('确定删除这张 Figure 学习卡片吗？'))return;
+ const section=cardEl.querySelector('.manualGuide'),result=guideFormData(section);
+ if(!Number.isInteger(index)||index<0||index>=result.figure_cards.length)return;
+ result.figure_cards.splice(index,1);await persistGuide(id,result);
+ section.outerHTML=manualGuide(id);toast('Figure 卡片已删除');
 }
 function parseNoteEntries(raw){
  const value=String(raw||'');if(!value.trim())return [];
@@ -96,7 +109,7 @@ async function deleteNote(id,noteId,cardEl){
  cardEl.querySelector('.detailSection:has(.savedNotes)').outerHTML=notesSection(id);
  toast('笔记已删除');
 }
-function detailPage(p){const s=statusOf(p.id),n=progress.get(p.id)?.notes||'',figures=Array.isArray(p.figure_cards)?p.figure_cards:[];const figureBlock=figures.length?figures.map(figCard).join(''):'<p class="muted">尚无经核对的 Figure 卡片；请结合原文阅读。</p>';return `<div class="detailHeader"><a href="#" class="backLink">← 返回文献列表</a><span class="stars">${'★'.repeat(p.stars)}${'☆'.repeat(5-p.stars)}</span></div><article class="detailArticle" data-id="${esc(p.id)}"><span class="tag">${esc(p.topic)}</span><h2>${esc(p.title)}</h2><p class="meta">${esc(p.authors)} · ${esc(p.journal)} · ${esc(p.publication_year)}</p>${verificationLabel(p)?`<p class="small"><span class="pill">${verificationLabel(p)}</span></p>`:""}<div class="row detailActions">${paperExternalUrl(p)?`<a href="${esc(paperExternalUrl(p))}" target="_blank" rel="noopener noreferrer">打开原文 / DOI ↗</a>`:`<span class="muted" title="此文献尚未保存有效的原文 URL 或 DOI">暂无有效原文链接</span>`}<label>阅读状态 <select class="readStatus"><option value="unread" ${s==='unread'?'selected':''}>未读</option><option value="reading" ${s==='reading'?'selected':''}>在读</option><option value="read" ${s==='read'?'selected':''}>已读</option></select></label></div><section class="detailSection"><h3>Key Finding</h3><p>${esc(p.key_finding)}</p></section><section class="detailSection"><h3>Why it matters to RUNX2</h3><p>${esc(p.runx2_value)}</p></section><section class="detailSection"><h3>Methods</h3><p>${esc(p.methods)}</p></section><section class="detailSection"><h3>Figure learning guide</h3><p>${esc(p.figures)}</p>${figureBlock}</section>${aiResultSection(p.id)}${notesSection(p.id)}<section class="detailSection"><h3>私人 PDF</h3><p class="muted">PDF 上传后将自动提交 AI 全文分析；分析结果单独保存，不覆盖原文献和个人笔记。</p><input class="pdfFile file" type="file" accept="application/pdf"><div class="row pdfActions"><button class="uploadPdf">上传 PDF</button><button class="openPdf">查看我的 PDF</button><button class="extractPdf">本地提取 PDF 文本</button></div><textarea class="pdfText hidden" readonly placeholder="提取的文本"></textarea></section></article>`;}
+function detailPage(p){const s=statusOf(p.id),n=progress.get(p.id)?.notes||'',figures=Array.isArray(p.figure_cards)?p.figure_cards:[];const figureBlock=figures.length?figures.map(figCard).join(''):'<p class="muted">尚无经核对的 Figure 卡片；请结合原文阅读。</p>';return `<div class="detailHeader"><a href="#" class="backLink">← 返回文献列表</a><span class="stars">${'★'.repeat(p.stars)}${'☆'.repeat(5-p.stars)}</span></div><article class="detailArticle" data-id="${esc(p.id)}"><span class="tag">${esc(p.topic)}</span><h2>${esc(p.title)}</h2><p class="meta">${esc(p.authors)} · ${esc(p.journal)} · ${esc(p.publication_year)}</p>${verificationLabel(p)?`<p class="small"><span class="pill">${verificationLabel(p)}</span></p>`:""}<div class="row detailActions">${paperExternalUrl(p)?`<a href="${esc(paperExternalUrl(p))}" target="_blank" rel="noopener noreferrer">打开原文 / DOI ↗</a>`:`<span class="muted" title="此文献尚未保存有效的原文 URL 或 DOI">暂无有效原文链接</span>`}<label>阅读状态 <select class="readStatus"><option value="unread" ${s==='unread'?'selected':''}>未读</option><option value="reading" ${s==='reading'?'selected':''}>在读</option><option value="read" ${s==='read'?'selected':''}>已读</option></select></label></div><section class="detailSection"><h3>Key Finding</h3><p>${esc(p.key_finding)}</p></section><section class="detailSection"><h3>Why it matters to RUNX2</h3><p>${esc(p.runx2_value)}</p></section><section class="detailSection"><h3>Methods</h3><p>${esc(p.methods)}</p></section><section class="detailSection"><h3>Figure learning guide</h3><p>${esc(p.figures)}</p>${figureBlock}</section>${manualGuide(p.id)}${notesSection(p.id)}<section class="detailSection"><h3>私人 PDF</h3><p class="muted">PDF 仅保存到你的私人存储空间，不会自动调用 AI，也不会产生 API 分析费用。</p><input class="pdfFile file" type="file" accept="application/pdf"><div class="row pdfActions"><button class="uploadPdf">上传 PDF</button><button class="openPdf">查看我的 PDF</button><button class="extractPdf">本地提取 PDF 文本</button></div><textarea class="pdfText hidden" readonly placeholder="提取的文本"></textarea></section></article>`;}
 function showRoute(){
  const isAdd=location.hash==='#add';
  const match=location.hash.match(/^#paper\/(.+)$/);
@@ -105,7 +118,7 @@ function showRoute(){
  $('listView').classList.toggle('hidden',!!p||isAdd);
  $('detailView').classList.toggle('hidden',!p);
  $('addView').classList.toggle('hidden',!isAdd);
- if(p){$('detailView').innerHTML=detailPage(p);window.scrollTo(0,0);refreshAnalysis(p.id).catch(e=>console.warn('AI analysis not available:',e.message));}
+ if(p){$('detailView').innerHTML=detailPage(p);window.scrollTo(0,0);refreshGuide(p.id).catch(e=>toast('学习指南加载失败：'+e.message));}
  else if(isAdd){$('addView').innerHTML=addPage();window.scrollTo(0,0);}
  else if(match){location.hash='';}
 }
@@ -125,9 +138,10 @@ async function handleCard(e){let cardEl=e.target.closest('[data-id]');if(!cardEl
  if(e.target.matches('.readStatus')){await save(id,{status:e.target.value});render();}
  if(e.target.matches('.addNote')){await addNote(id,cardEl);}
  if(e.target.matches('.deleteNote')){await deleteNote(id,e.target.dataset.noteId,cardEl);}
- if(e.target.matches('.uploadPdf')){let file=cardEl.querySelector('.pdfFile').files[0];if(!file)return toast('请先选择 PDF');if(file.type!=='application/pdf'||file.size>25*1024*1024)return toast('仅支持 25MB 以内的 PDF');let path=`${user.id}/${id}/${Date.now()}_${file.name.replace(/[^\w.\-]/g,'_')}`;let {error}=await client.storage.from('paper-pdfs').upload(path,file,{contentType:'application/pdf',upsert:false});if(error)throw error;toast('PDF 已上传，正在提交 AI 全文分析');await analyzePdf(id,path);}
- if(e.target.matches('.analyzeLatest')){await analyzePdf(id,await latestPdfPath(id));}
- if(e.target.matches('.refreshAnalysis')){await refreshAnalysis(id);toast('分析状态已刷新');}
+ if(e.target.matches('.uploadPdf')){let file=cardEl.querySelector('.pdfFile').files[0];if(!file)return toast('请先选择 PDF');if(file.type!=='application/pdf'||file.size>25*1024*1024)return toast('仅支持 25MB 以内的 PDF');let path=`${user.id}/${id}/${Date.now()}_${file.name.replace(/[^\w.\-]/g,'_')}`;let {error}=await client.storage.from('paper-pdfs').upload(path,file,{contentType:'application/pdf',upsert:false});if(error)throw error;toast('PDF 已上传到私人存储空间');}
+ if(e.target.matches('.saveManualGuide')){await saveGuide(id,cardEl);}
+ if(e.target.matches('.addGuideFigure')){await addGuideFigure(id,cardEl);}
+ if(e.target.matches('.deleteGuideFigure')){await deleteGuideFigure(id,Number(e.target.dataset.figureIndex),cardEl);}
  if(e.target.matches('.openPdf')){let {data,error}=await client.storage.from('paper-pdfs').list(`${user.id}/${id}`,{limit:100});if(error)throw error;if(!data?.length)return toast('这篇文章还没有上传 PDF');let latest=[...data].sort((a,b)=>b.name.localeCompare(a.name))[0];let path=`${user.id}/${id}/${latest.name}`;let signed=await client.storage.from('paper-pdfs').createSignedUrl(path,120);if(signed.error)throw signed.error;window.open(signed.data.signedUrl,'_blank','noopener');}
  if(e.target.matches('.extractPdf')){let file=cardEl.querySelector('.pdfFile').files[0];if(!file)return toast('请先选择本机 PDF');if(!window.pdfjsLib)return toast('PDF 阅读组件未加载，请联网后重试');pdfjsLib.GlobalWorkerOptions.workerSrc='https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';let pdf=await pdfjsLib.getDocument({data:new Uint8Array(await file.arrayBuffer())}).promise;let parts=[];for(let i=1;i<=Math.min(pdf.numPages,20);i++){let page=await pdf.getPage(i);let txt=await page.getTextContent();parts.push(`Page ${i}:\n`+txt.items.map(x=>x.str).join(' '));}let box=cardEl.querySelector('.pdfText');box.classList.remove('hidden');box.value=parts.join('\n\n');toast(`已提取前 ${Math.min(pdf.numPages,20)} 页文本（不支持扫描版 OCR）`);}
  }catch(err){toast('操作失败：'+err.message);}}
