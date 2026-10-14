@@ -1,8 +1,94 @@
-<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>RUNX2 Private Figure Atlas</title><style>
-:root{font-family:Inter,"Microsoft YaHei",system-ui,sans-serif;color:#183550;background:#f4f7fb}*{box-sizing:border-box}body{margin:0}header{background:linear-gradient(120deg,#163653,#28638a);color:white;padding:28px max(18px,calc((100vw - 1240px)/2))}header p{color:#d8e6f1}main{max-width:1240px;margin:auto;padding:18px}input,select,textarea,button{font:inherit;border:1px solid #ccd9e6;border-radius:9px;padding:10px;background:white;color:#24445e}button{cursor:pointer}button.primary{background:#246c9c;color:white;border-color:#246c9c}button:disabled{opacity:.5;cursor:wait}a{color:#16649c}.muted{color:#617b92;font-size:13px}.toolbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;margin:15px 0}.toolbar input{flex:1;min-width:200px}.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,355px),1fr));gap:15px}.card,.panel{background:white;border:1px solid #dce5ee;border-radius:14px;padding:18px;box-shadow:0 2px 8px #1c4a6910}.card h3{font-size:17px;line-height:1.42;margin:10px 0}.meta{font-size:12px;color:#667e93}.stars{color:#9d6813;font-weight:700}.tag{display:inline-block;background:#eaf3fa;color:#255c83;border-radius:18px;padding:5px 9px;font-size:12px;margin:3px}.row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.figure{border-left:3px solid #4881af;background:#f2f7fb;padding:10px;margin:8px 0;border-radius:6px;font-size:13px;line-height:1.5}details{border-top:1px solid #e4edf4;margin-top:12px;padding-top:10px}summary{cursor:pointer;font-weight:650;color:#225e88}textarea{width:100%;min-height:86px;margin-top:8px}p{line-height:1.6;font-size:14px}.small{font-size:12px}.hidden{display:none!important}.stat{font-size:13px;padding:8px 0;color:#42627b}.danger{color:#b42d36}.pill{background:#fff3dc;color:#855d17;padding:3px 7px;border-radius:5px;font-size:11px}.auth{max-width:480px;margin:30px auto}.auth input{width:100%;margin:9px 0}.auth button{width:100%}#toast{position:fixed;bottom:18px;right:18px;background:#183e5b;color:white;padding:12px 18px;border-radius:10px;max-width:340px;z-index:10;display:none}.file{font-size:12px;max-width:100%}.primaryLink{display:inline-block;background:#246c9c;color:white;text-decoration:none;border-radius:8px;padding:10px 13px;font-size:13px;font-weight:650}.detailHeader{display:flex;justify-content:space-between;align-items:center;margin:16px 0}.backLink{font-weight:650}.detailArticle{background:white;border:1px solid #dce5ee;border-radius:16px;padding:clamp(18px,4vw,40px);box-shadow:0 2px 12px #1c4a6910;max-width:940px;margin:auto}.detailArticle h2{font-size:clamp(22px,3vw,32px);line-height:1.35}.detailArticle .meta{font-size:14px}.detailSection{border-top:1px solid #e0e8f0;padding-top:18px;margin-top:22px}.detailSection h3{color:#194e76}.detailSection p{font-size:15px}.detailArticle .figure{padding:16px;font-size:14px;margin:12px 0}.detailActions,.pdfActions{justify-content:flex-start;gap:14px}.detailArticle .notes{min-height:170px}@media(max-width:600px){header{padding:20px}main{padding:12px}.toolbar>*{width:100%}}
-.savedNote{border:1px solid #dce5ee;border-radius:10px;background:#f7fafd;padding:13px 15px;margin:10px 0}.savedNoteText{white-space:pre-wrap;overflow-wrap:anywhere;margin:9px 0 0}.deleteNote{font-size:12px;color:#a62935;border-color:#e4c4c7;padding:5px 9px}.savedNotes{margin-bottom:20px}
-</style></head><body>
-<header><div class="row"><div><h1>RUNX2 Midface · Private Figure Atlas</h1><p>颅面发育 · Positional identity · Epithelial niche · scRNA / Spatial · Figure learning</p></div><button id="signout" class="hidden">退出登录</button></div></header>
-<main><section id="login" class="panel auth"><h2>私人文献库登录</h2><p class="muted">输入已授权邮箱，接收一次性登录链接。网页及阅读记录由 Supabase 登录和数据库权限保护。</p><input id="email" type="email" placeholder="你的邮箱" autocomplete="email"><input id="loginPassword" type="password" placeholder="请输入 Supabase 登录密码" autocomplete="current-password"><button class="primary" id="loginBtn">邮箱密码登录</button><p id="authMsg" class="muted"></p></section>
-<section id="app" class="hidden"><div class="toolbar"><input type="search" id="search" placeholder="检索标题、机制、Figure、Method、DOI…"><select id="topic"><option value="">全部主题</option></select><select id="status"><option value="">全部阅读状态</option><option value="unread">未读</option><option value="reading">在读</option><option value="read">已读</option></select><select id="stars"><option value="0">全部星级</option><option value="5">★★★★★</option><option value="4">★★★★及以上</option><option value="3">★★★及以上</option><option value="2">★★及以上</option></select><button id="exportBtn">导出阅读记录 JSON</button><a href="#add" class="primaryLink">＋ 添加文献</a></div><div id="listView"><div id="stats" class="stat"></div><div id="cards" class="grid"></div></div><div id="detailView" class="hidden"></div><div id="addView" class="hidden"></div></section></main><div id="toast"></div>
-<script src="config.js"></script><script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script><script src="app.js"></script></body></html>
+import { createClient } from 'https://esm.sh/@supabase/supabase-js@2';
+
+const headers = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'authorization, x-client-info, apikey, content-type',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Content-Type': 'application/json',
+};
+const respond = (payload: unknown, status = 200) => new Response(JSON.stringify(payload), { status, headers });
+const url = Deno.env.get('SUPABASE_URL')!;
+const serviceKey = Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!;
+const anonKey = Deno.env.get('SUPABASE_ANON_KEY')!;
+const openaiKey = Deno.env.get('OPENAI_API_KEY')!;
+const model = Deno.env.get('OPENAI_MODEL') || 'gpt-4.1';
+const admin = createClient(url, serviceKey, { auth: { persistSession: false } });
+
+async function analyze(userId: string, paperId: string, path: string, title: string) {
+  const jobKey = { user_id: userId, paper_id: paperId };
+  try {
+    const signed = await admin.storage.from('paper-pdfs').createSignedUrl(path, 1800);
+    if (signed.error || !signed.data?.signedUrl) throw Error('Cannot sign private PDF URL');
+    const instructions = `You are a rigorous scientific paper reading assistant. Read the attached ORIGINAL PDF, including main text, methods, figure captions and visible figures when accessible. Return ONLY a JSON object with these exact keys: key_finding (string), methods (string), runx2_value (string), figures (string), figure_cards (array), limitations (string). Each figure_cards entry MUST have string fields: figure, question, method, result, evidence, why, verification. Analyze all identifiable main Figures individually, and supplemental figures when feasible. For each figure distinguish direct observation from interpretation; cite actual figure/panel labels only if verified. If not identifiable, say 'Figure number not verified' and explain in limitations; NEVER invent panels, results, sample sizes, methods, or causal conclusions. In 'methods' report actual sample sizes and controls only when present. 'runx2_value' is explicitly YOUR proposed relevance, not a claim from the source: connect critically to mouse E12.5–E14.5 craniofacial morphogenesis, Runx2 WT/HT/KO, RUNX2-enriched osteogenic progenitors (OP), RUNX2-low UCM, epithelial/neural communication, Ephrin/SEMA signaling, and Visium HD spatial analysis, only where relevant. Write detailed Chinese prose with English gene and technique names. Do not assume the paper directly studies RUNX2. No external knowledge disguised as source evidence. Note whether the PDF seems incomplete or scanned.`;
+    const request = {
+      model,
+      instructions,
+      input: [{ role: 'user', content: [
+        { type: 'input_text', text: `Analyze this uploaded scientific PDF and return a valid JSON object matching the required schema. Library title: ${title}. The actual PDF is authoritative; flag mismatches.` },
+        { type: 'input_file', file_url: signed.data.signedUrl },
+      ] }],
+      text: { format: { type: 'json_object' } },
+      max_output_tokens: 14000,
+      store: false,
+    };
+    const response = await fetch('https://api.openai.com/v1/responses', {
+      method: 'POST',
+      headers: { 'Authorization': `Bearer ${openaiKey}`, 'Content-Type': 'application/json' },
+      body: JSON.stringify(request),
+      signal: AbortSignal.timeout(240000),
+    });
+    const body = await response.json();
+    if (!response.ok) throw Error(`AI API ${response.status}: ${JSON.stringify(body.error || body).slice(0, 650)}`);
+    const content = (body.output || []).flatMap((o: any) => o.content || []).filter((c: any) => c.type === 'output_text').map((c: any) => c.text).join('');
+    if (!content) throw Error('AI response contained no text (possibly incomplete or filtered)');
+    const parsed = JSON.parse(content);
+    for (const field of ['key_finding', 'methods', 'runx2_value', 'figures', 'limitations']) {
+      if (typeof parsed[field] !== 'string') throw Error(`Invalid analysis: missing ${field}`);
+    }
+    if (!Array.isArray(parsed.figure_cards)) throw Error('Invalid analysis: figure_cards must be an array');
+    const save = await admin.from('paper_ai_analyses').upsert({ ...jobKey, storage_path: path, result: parsed, model, updated_at: new Date().toISOString() }, { onConflict: 'user_id,paper_id' });
+    if (save.error) throw save.error;
+    const update = await admin.from('paper_ai_jobs').update({ status: 'done', error: null, updated_at: new Date().toISOString() }).match(jobKey);
+    if (update.error) throw update.error;
+  } catch (e) {
+    const msg = e instanceof Error ? e.message : String(e);
+    console.error('Paper AI analysis failed', paperId, msg);
+    await admin.from('paper_ai_jobs').update({ status: 'failed', error: msg.slice(0, 700), updated_at: new Date().toISOString() }).match(jobKey);
+  }
+}
+
+Deno.serve(async (req) => {
+  if (req.method === 'OPTIONS') return new Response('ok', { headers });
+  if (req.method !== 'POST') return respond({ ok: false, error: 'POST required' }, 405);
+  try {
+    if (!openaiKey || !serviceKey || !anonKey) throw Error('Server secrets missing');
+    const token = (req.headers.get('authorization') || '').replace(/^Bearer\s+/i, '');
+    if (!token) return respond({ ok: false, error: 'Please sign in' }, 401);
+    const authClient = createClient(url, anonKey, { auth: { persistSession: false } });
+    const { data: auth, error: authError } = await authClient.auth.getUser(token);
+    if (authError || !auth.user) return respond({ ok: false, error: 'Invalid user session' }, 401);
+    const { paper_id, storage_path } = await req.json();
+    if (typeof paper_id !== 'string' || !/^[0-9a-f-]{36}$/i.test(paper_id) || typeof storage_path !== 'string') return respond({ ok: false, error: 'Invalid request' }, 400);
+    const prefix = `${auth.user.id}/${paper_id}/`;
+    if (!storage_path.startsWith(prefix) || !storage_path.toLowerCase().endsWith('.pdf') || storage_path.includes('..')) return respond({ ok: false, error: 'PDF path does not belong to this user and paper' }, 403);
+    const [{ data: paper, error: paperErr }, { data: objects, error: objErr }] = await Promise.all([
+      admin.from('papers').select('id,title').eq('id', paper_id).maybeSingle(),
+      admin.storage.from('paper-pdfs').list(`${auth.user.id}/${paper_id}`, { limit: 1000 }),
+    ]);
+    if (paperErr || !paper) return respond({ ok: false, error: 'Paper not found' }, 404);
+    const fileName = storage_path.slice(prefix.length);
+    const file = objects?.find((x: any) => x.name === fileName);
+    if (objErr || !file) return respond({ ok: false, error: 'Uploaded PDF not found' }, 404);
+    if ((file.metadata?.size || 0) > 25 * 1024 * 1024) return respond({ ok: false, error: 'PDF too large' }, 413);
+    const key = { user_id: auth.user.id, paper_id };
+    const { data: old } = await admin.from('paper_ai_jobs').select('status,updated_at').match(key).maybeSingle();
+    if (old?.status === 'running' && Date.now() - Date.parse(old.updated_at) < 10 * 60 * 1000) return respond({ ok: false, error: 'Analysis already running' }, 409);
+    const upsert = await admin.from('paper_ai_jobs').upsert({ ...key, storage_path, status: 'running', error: null, updated_at: new Date().toISOString() }, { onConflict: 'user_id,paper_id' });
+    if (upsert.error) throw upsert.error;
+    EdgeRuntime.waitUntil(analyze(auth.user.id, paper_id, storage_path, paper.title));
+    return respond({ ok: true, status: 'running' }, 202);
+  } catch (e) {
+    console.error(e);
+    return respond({ ok: false, error: e instanceof Error ? e.message : 'Unexpected server error' }, 500);
+  }
+});
