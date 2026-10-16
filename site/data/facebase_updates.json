@@ -1,0 +1,27 @@
+{
+  "updated_at": "2026-10-16 (initial curated snapshot; automated check after workflow is enabled)",
+  "source": "https://www.facebase.org/about/news/",
+  "items": [
+    {
+      "title": "Gene expression patterns of the developing face at single cell resolution",
+      "kind": "Dataset release news",
+      "date": "2026-01-20",
+      "summary": "Human and mouse craniofacial single-nucleus RNA-seq atlas from the Cotney lab; relevant to developmental cell-state comparison.",
+      "url": "https://www.facebase.org/about/news/page4/"
+    },
+    {
+      "title": "Gene expression dynamics of human and mouse craniofacial development at the single-cell level",
+      "kind": "Publication",
+      "date": "2026-03",
+      "summary": "Cross-species single-cell craniofacial development atlas; useful for comparison with RUNX2 WT/HT cell-state patterns.",
+      "url": "https://www.facebase.org/publications/"
+    },
+    {
+      "title": "Sensory nerve-derived signaling coordinates oropharyngeal structural organization",
+      "kind": "Dataset release news",
+      "date": "2026-08-25",
+      "summary": "Neural signaling and craniofacial structural organization in neonatal mice; developmental timing differs from E12.5–E14.5.",
+      "url": "https://www.facebase.org/"
+    }
+  ]
+}
