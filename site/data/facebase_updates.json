@@ -1,13 +1,118 @@
 {
-  "updated_at": "2026-10-16 (initial curated snapshot; automated check after workflow is enabled)",
-  "source": "https://www.facebase.org/about/news/",
+  "updated_at": "2026-10-16 05:32 UTC",
+  "source": "https://www.facebase.org/ermrest/catalog/1/entity/isa:dataset",
   "items": [
     {
-      "title": "Gene expression patterns of the developing face at single cell resolution",
+      "title": "Sensory nerve-derived signaling coordinates oropharyngeal structural organization",
       "kind": "Dataset release news",
-      "date": "2026-01-20",
-      "summary": "Human and mouse craniofacial single-nucleus RNA-seq atlas from the Cotney lab; relevant to developmental cell-state comparison.",
-      "url": "https://www.facebase.org/about/news/page4/"
+      "date": "2026-08-25",
+      "summary": "Neural signaling and craniofacial structural organization in neonatal mice; developmental timing differs from E12.5–E14.5.",
+      "url": "https://www.facebase.org/"
+    },
+    {
+      "title": "KDM6B Acts via BMP Signaling During Root Morphogenesis",
+      "kind": "FaceBase dataset",
+      "date": "2026-07-24",
+      "summary": "The histone demethylase KDM6B, expressed in cranial neural crest-derived dental mesenchyme, acts as a key epigenetic regulator coordinating sensory innervation during tooth root development. Loss of KDM6B impairs trigeminal axon entry and branching into the dental pulp by reducing the expression of the BMP antagonist Bambi, leading to overactivation of BMP signaling and suppressed NGF expression, which hinders sensor",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/A2-0AAR"
+    },
+    {
+      "title": "Investigating Oropharyngeal Development in Neonatal Mice Using scRNA sequencing, RNA sequencing, and SeqFISH",
+      "kind": "FaceBase dataset",
+      "date": "2026-07-24",
+      "summary": "Oropharyngeal dysfunction impairs essential behaviors such as suckling, swallowing, and speech, and can lead to life-threatening complications. However, the mechanism by which neural networks coordinate the organization of neuromuscular architecture to support integrated oropharyngeal functions remains unclear. We employed soft palatal musculature as a model to investigate how sensory nerves regulate neuromuscular ar",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/8N-FGKC"
+    },
+    {
+      "title": "Center for TMD IMPACT Clinician Needs Assessment",
+      "kind": "FaceBase dataset",
+      "date": "2026-07-23",
+      "summary": "Temporomandibular disorders (TMD) are a group of over 30 conditions affecting the temporomandibular joints (TMJs) and surrounding muscles and ligaments. The joints, muscles, and ligaments allow for movements necessary for chewing, speaking, and facial expressions. TMD can manifest as pain in the jaw, face, or neck, difficulty or discomfort in chewing, a clicking or locking of the jaw, and headaches. The exact cause o",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/9N-634W"
+    },
+    {
+      "title": "Center for TMD IMPACT Patient Needs Assessment",
+      "kind": "FaceBase dataset",
+      "date": "2026-07-23",
+      "summary": "Temporomandibular disorders (TMD) are a group of over 30 conditions affecting the temporomandibular joints (TMJs) and surrounding muscles and ligaments. The joints, muscles, and ligaments allow for movements necessary for chewing, speaking, and facial expressions. TMD can manifest as pain in the jaw, face, or neck, difficulty or discomfort in chewing, a clicking or locking of the jaw, and headaches. The exact cause o",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/9N-634P"
+    },
+    {
+      "title": "Eyelid Kinematics and Orbicularis Oculi Electromyography - Persons Without Facial Pathology",
+      "kind": "FaceBase dataset",
+      "date": "2026-07-23",
+      "summary": "High-resolution three-dimensional motion capture and fine-wire EMG from 8 participants without paralysis or other eyelid pathology during 5 eyelid behaviors: spontaneous blink, voluntary blink, reflexive blink, soft closure, and forced closure. \n\nThis is restricted-access human data. To gain access to this data, you must first go through the [process outlined here](/odocs/data-guidelines/).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/88-28BJ"
+    },
+    {
+      "title": "RNA-Seq elucidates the FGFR2-RA pathway in dura-suture interaction during Craniosynostosis",
+      "kind": "FaceBase dataset",
+      "date": "2026-07-13",
+      "summary": "Using cranial suture development as a model, we identified a key fibroblast growth factor receptor 2 (FGFR2)-retinoic acid (RA) signaling axis that regulates early postnatal coronal suture development through dura mater-suture mesenchyme interactions. Notably, FGFR2 signaling gradually decreases from postnatal day 3.5 (P3.5) to P7.5 with a corresponding decline in RA signaling, balancing RA synthesis by maintaining m",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/8B-9CNW"
+    },
+    {
+      "title": "Bulk RNA-seq and Cut&Run-seq analysis of control and Gli1CreER;Kdm6bfl/fl adult mouse incisors",
+      "kind": "FaceBase dataset",
+      "date": "2026-06-09",
+      "summary": "We identify the histone demethylase KDM6B as a key histone regulator that protects transit-amplifying cells (TACs) from mechanical stress by controlling PIEZO1-dependent mechanotransduction. Using the continuously erupting mouse incisor as a model system, we show that loss of Kdm6b disrupts TAC identity, increases apoptosis, and impairs tissue homeostasis under high mechanical loading. Mechanistically, loss of Kdm6b ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/88-ZJCW"
+    },
+    {
+      "title": "FGF signalling orchestrates multiple roles during salivary gland branching morphogenesis",
+      "kind": "FaceBase dataset",
+      "date": "2026-05-12",
+      "summary": "Bulk RNA-seq data on mouse (Mus musculus) embryonic submandibular salivary glands.\nGlands were dissected at E13.5 and cultured for 48h before RNA extraction.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/AH-J1XR"
+    },
+    {
+      "title": "MERFISH gene expression patterns",
+      "kind": "FaceBase dataset",
+      "date": "2026-04-27",
+      "summary": "Mouse embryonic datasets from the MERSCOPE Ultra Data Release by Vizgen were reanalyzed for spatial gene expression patterns (link provided in Related Dataset(s) section). These datasets contain three stages of mouse embryo on a single MERSCOPE Ultra Large slide, all profiled simultaneously with a 466-gene mouse embryonic development panel (ES1). The protocol and additional details can be found at the corresponding l",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/AD-A9WR"
+    },
+    {
+      "title": "Visium HD gene expression patterns",
+      "kind": "FaceBase dataset",
+      "date": "2026-04-27",
+      "summary": "Mouse Visium HD spatial transcriptomics data from GEO dataset GSE284271 (Piña, J.O., Raju, R., Stipano, E. et al. Single cell spatial transcriptomics links Wnt signaling disruption to extracellular matrix development in a cleft palate model. Sci Rep 15, 29639 (2025)) were reanalyzed. The dataset includes E12.5 and E13.5 mouse palate tissue sections relevant to palate development and cleft palate. The protocol and add",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/9J-SPH8"
+    },
+    {
+      "title": "Amelogenin phosphorylation affects key regulatory genes in the enamel organ",
+      "kind": "FaceBase dataset",
+      "date": "2026-04-23",
+      "summary": "Amelogenin (AMELX), the predominant enamel matrix protein (EMP), has a single phosphorylation site at Serine 16 (S16), which enhances its capacity to stabilize amorphous calcium phosphate and inhibit crystallization in vitro. To investigate the role of AMELX phosphorylation in vivo, we generated a knock-in (KI) mouse model, AmelxS16A, in which S16 is substituted with Alanine that prevents AMELX phosphorylation. KI en",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/AF-V3VC"
+    },
+    {
+      "title": "Mandible vs tongue involvement in cleft palate in mouse models",
+      "kind": "FaceBase dataset",
+      "date": "2026-04-16",
+      "summary": "We generated a Pierre Robin sequence (PRS) mouse model with Sox9 deleted specifically in the mandibular mesenchyme (Sox9fl/fl;mtHand2Cre) which resulted in mandibular hypoplasia and retrognathia, palatal shelf elevation delay, and fully penetrant cleft of the secondary palate. To determine the contribution of the mandible vs tongue malposition to cleft palate in PRS, we generated a micrognathia and microglossia model",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/AB-SJQA"
+    },
+    {
+      "title": "Six2 and CTCF ChIP-seq datasets of wildtype mouse embryonic facial tissues (E10.5 - E13.5)",
+      "kind": "FaceBase dataset",
+      "date": "2026-04-09",
+      "summary": "We performed a ChIP-seq assay using a Six2 antibody to identify endogenous Six2-binding genomic loci in mouse embryonic facial tissues. We performed a ChIPseq assay using the CTCF antibody to identify topologically associating domains and boundaries. We generated ChIP libraries and sent them for next-generation sequencing. We also generated input libraries as control samples.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/7Z-41CW"
+    },
+    {
+      "title": "Phenotypic impacts of embryonic exposure to the CSF1R inhibitor PLX5622 on craniofacial development",
+      "kind": "FaceBase dataset",
+      "date": "2026-04-09",
+      "summary": "Images of control and PLX5622-exposed whole-mount E11.5, E12.5, and E13.5 nerve (2H3) and muscle (MF 20) antibody staining and P1 skeletal staining.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/A9-12PJ"
+    },
+    {
+      "title": "Identification of Synovial Lymphatics in the TMJ and their Roles in Arthritis and Pain",
+      "kind": "FaceBase dataset",
+      "date": "2026-03-19",
+      "summary": "Temporomandibular joint (TMJ) arthritis is a craniofacial disorder characterized by joint dysfunction and orofacial pain. Lymphatic regulation and function in TMJ remain unknown. Using genetic reporter mice, human tissues, tissue clearing, 3D volume imaging, and functional studies, we identified a synovial lymphatic system in TMJ. In a mouse model of TMJ arthritis, inflammation induces extensive lymphatic remodeling ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/A2-0MH4"
     },
     {
       "title": "Gene expression dynamics of human and mouse craniofacial development at the single-cell level",
@@ -17,11 +122,1285 @@
       "url": "https://www.facebase.org/publications/"
     },
     {
-      "title": "Sensory nerve-derived signaling coordinates oropharyngeal structural organization",
+      "title": "Spatial Transcriptomics of Mouse CFA-induced TMJ arthritis",
+      "kind": "FaceBase dataset",
+      "date": "2026-02-25",
+      "summary": "Complete Freund’s Adjuvant (CFA)-induced Temporomandibular joint (TMJ) arthritis remodels the cartilage, subchondral bone, and synovial tissue with diverse cell changes. The functional importance of the anatomical organization of TMJ cell types and cellular microenvironment in painful arthritis remains largely unknown. Here, we applied seqFISH (sequential Fluorescence In Situ Hybridization) spatial transcriptomicsto ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/8Q-3KAR"
+    },
+    {
+      "title": "MicroCT analysis of Ambn-IRESCre mouse models",
+      "kind": "FaceBase dataset",
+      "date": "2026-01-22",
+      "summary": "The enamel of 8-week-old _Ambn-IREScre^+/-^, Ambn-IREScre^+/+^_ mouse incisor enamel was examined by microCT",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/7X-HZDA"
+    },
+    {
+      "title": "Gene expression patterns of the developing face at single cell resolution",
       "kind": "Dataset release news",
-      "date": "2026-08-25",
-      "summary": "Neural signaling and craniofacial structural organization in neonatal mice; developmental timing differs from E12.5–E14.5.",
-      "url": "https://www.facebase.org/"
+      "date": "2026-01-20",
+      "summary": "Human and mouse craniofacial single-nucleus RNA-seq atlas from the Cotney lab; relevant to developmental cell-state comparison.",
+      "url": "https://www.facebase.org/about/news/page4/"
+    },
+    {
+      "title": "Gene expression patterns of the developing human face at single cell resolution (snRNA-seq)",
+      "kind": "FaceBase dataset",
+      "date": "2026-01-13",
+      "summary": "We present a time-resolved single-nucleus RNA sequencing (snRNA-seq) atlas of human craniofacial development from craniofacial tissues of 24 embryos, spanning 6 key time points during embryogenesis (4–8 post-conception weeks). We profiled over 95,000 nuclei and identified eight major cell types, including mesenchyme, ectoderm, endothelium, muscle progenitors, SOX10+ CNCC’s and SOX2+ early progenitors. This resource a",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/8D-2JQ0"
+    },
+    {
+      "title": "Gene expression patterns of the developing mouse face at single cell resolution (snRNA-seq)",
+      "kind": "FaceBase dataset",
+      "date": "2026-01-13",
+      "summary": "We present a time-resolved single-nucleus RNA sequencing (snRNA-seq) atlas of mouse craniofacial development from craniofacial tissues of 9 embryos, spanning 3 key time points during embryogenesis (embryonic stages 10.5–12.5). We profiled over 60,000 nuclei and identified seven major cell types, including mesenchyme, ectoderm, endothelium, muscle progenitors, and SOX10+ CNCC’s. This resource additionally resolves 12 ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/7N-54BY"
+    },
+    {
+      "title": "Optical Projection Tomography imaging of the craniofacial morphology of control and Shroom3 null embryos",
+      "kind": "FaceBase dataset",
+      "date": "2025-09-15",
+      "summary": "Thirty six embryos, comprised of _Shroom3gt/+_ (HET), _Shroom3gt/gt_ (HOMO), and wildtype (WT) littermate controls, were imaged using Optical Projection Tomography and their craniofacial morphology qualitatively and quantitatively assessed.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/7E-Y876"
+    },
+    {
+      "title": "Bulk RNA-seq analysis of the trigeminal ganglion and molar tooth root at PN6.5 between control and AvCreERT2;Piezo2fl/fl mice",
+      "kind": "FaceBase dataset",
+      "date": "2025-06-19",
+      "summary": "Piezo2+ sensory neurons, which are responsible for mechanosensation, regulate tooth root formation by controlling the secretion of PDGF (platelet-derived growth factor) ligands through the PIEZO2 mechanosensory ion channel. Furthermore, loss of Piezo2 in sensory nerves disrupts nerve-derived PDGFA secretion, impairing the regulation of progenitor fate by PDGF signaling in the dental mesenchyme and resulting in defect",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/74-X8CE"
+    },
+    {
+      "title": "COHRA2: Factors Contributing to Oral Health Disparities in Appalachia",
+      "kind": "FaceBase dataset",
+      "date": "2025-05-30",
+      "summary": "There are genetic, environmental and behavioral components to oral health in all populations. Furthermore, it is clear that these components interact and may be transmissible within families. The overarching goal of the Center for Oral Health Research in Appalachia (COHRA) is to delineate the covariation between genetic, behavioral, family, and community factors associated with oro-dental disease and tooth loss in ru",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/4Y-4SK4"
+    },
+    {
+      "title": "Pittsburgh Oral Facial Cleft Studies: Extending the Phenotype of Nonsyndromic Orofacial Clefting (OFC1)",
+      "kind": "FaceBase dataset",
+      "date": "2025-05-29",
+      "summary": "The overall goal of this study and its associated studies was to map genetic loci and other risk factors involved in orofacial clefts (OFC), including isolated cleft lip (CL), isolated cleft palate (CP), and CL with or without CP (CL/P). Drs. Marazita and Weinberg and their collaborators also investigate additional phenotypic features associated with OFC - including both physical measurements, disease states, and psy",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/5A-FJBJ"
+    },
+    {
+      "title": "Oral-Facial Cleft Families: Phenotype and Genetics (OFC2)",
+      "kind": "FaceBase dataset",
+      "date": "2025-05-29",
+      "summary": "The overall goal of this study and its associated studies was to map genetic loci and other risk factors involved in orofacial clefts (OFC), including isolated cleft lip (CL), isolated cleft palate (CP), and CL with or without CP (CL/P). Drs. Marazita and Weinberg and their collaborators also investigate additional phenotypic features associated with OFC - including both physical measurements, disease states, and psy",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/56-ES6P"
+    },
+    {
+      "title": "ATAC-seq and ChIP-seq targeting PBX1 and PBX3 in the normal chick FEZ at HH22",
+      "kind": "FaceBase dataset",
+      "date": "2025-05-13",
+      "summary": "We performed ATAC-seq and ChIP-seq targeting two homeodomain transcription factors, PBX1 and PBX3, in the ectodermal layer of chick embryo frontonasal process at Hamburger-Hamilton stage 22 (HH22).\nEach data set has two biological replicates. The Frontonasal Ectodermal Zone (FEZ) tissues from 10-15 normal chick embryos at HH22 were pooled for each replicate for ATAC-seq analysis (n=2). Since ChIP-seq requires a subst",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/5G-BBG8"
+    },
+    {
+      "title": "High-Resolution Spatial Profiling and Cell Lineage Analysis of Mouse Palate at E12.5, E13.5, and E15.5",
+      "kind": "FaceBase dataset",
+      "date": "2025-04-10",
+      "summary": "Spatial Genomics performed SeqFISH-based spatial genomics imaging using a customized gene panel on cryosections of E12.5, E13.5, and E15.5 embryonic heads within their Gene Positioning System (Spatial Genomics). Spatial plots and seqFISH gene expression patterns were visualized using SGNlite software (Spatial Genomics).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/62-Y0VT"
+    },
+    {
+      "title": "scRNA-seg analysis of E12.5, E13.5, E14.5, E15.5, and E18.5 mouse whole palate",
+      "kind": "FaceBase dataset",
+      "date": "2025-04-09",
+      "summary": "Whole palatal tissues from E12.5, E13.5, E14.5, E15.5, and E18.5 embryos were digested and dissociated using Multi Tissue Dissociation Kit 3 (130-110-204, Miltenyi Biotec) at 37°C and 600 rpm for 15-30 minutes in a thermomixer (Thermo Fisher Scientific, 2231000269). The single-cell suspension was processed into a single-cell library using 10x Genomics Chromium single-cell 3’ v3 reagent kits (10x Genomics, PN-1000269)",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/62-QZ1A"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer Assay - Vista Enhancer ID: mm1165",
+      "kind": "FaceBase dataset",
+      "date": "2025-03-31",
+      "summary": "Transgenic Mouse Enhancer Assay - Vista Enhancer ID: mm1165\n See link to the data preparation protocols for this study in the Additional Information section \n \t **Enhancer location:** Mouse genome mm10, chr4:154801901-154803150\n \t **Name:**  mCF265\n \t **Vista Enhancer ID:**  mm1165\n \t **Enhancer expression:**  positive\n \t **Tissues where active:**  branchial arch, facial mesenchyme, nose\n \t \n**This data set includes ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/7Q-9B80"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer Assay - Vista Enhancer ID: mm1090",
+      "kind": "FaceBase dataset",
+      "date": "2025-03-31",
+      "summary": "Transgenic Mouse Enhancer Assay - Vista Enhancer ID: mm1090\n See link to the data preparation protocols for this study in the Additional Information section \n \t **Enhancer location:** Mouse genome mm10, chr4:154801901-154803150\n \t **Name:**  mCF230\n \t **Vista Enhancer ID:**  mm1090\n \t **Enhancer expression:**  positive\n \t **Tissues where active:**  branchial arch, facial mesenchyme, nose, limb\n \t \n \t\n**This data set ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/7Q-9B7Y"
+    },
+    {
+      "title": "Regenerated coronal suture restored neurocognitive defects in a Twist1 craniosynostosis mouse model",
+      "kind": "FaceBase dataset",
+      "date": "2024-10-28",
+      "summary": "Craniosynostosis is a congenital craniofacial disorder caused by the premature fusion of cranial sutures. This study investigates how the reprogramming of progenitor cells regenerates the cranial suture to restore skull and neurocognitive function in clinically relevant animal models of craniosynostosis.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/5N-K4X4"
+    },
+    {
+      "title": "UH3-Effects of Slc13a5 Gene Knock-out on Mouse Tooth Development",
+      "kind": "FaceBase dataset",
+      "date": "2024-09-03",
+      "summary": "A _Slc13a5_^Arg337*^ mouse model homologous to human _SLC13A5_ mutation (p.Arg333*) was generated in C57BL/6J background using CRISPR/Cas9 gene editing technique. The coding exons and exon/intron borders of the F2 generation were confirmed by Sanger sequencing.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2N-7V1T"
+    },
+    {
+      "title": "Comprehensive Analysis of Epigenetic Regulatory Network in the Mouse Incisor",
+      "kind": "FaceBase dataset",
+      "date": "2024-07-17",
+      "summary": "Epigenetic regulation plays a crucial role in controlling the expression of stage- and tissue-specific genes during development and tissue homeostasis. As a core subunit of the BAF complex, ARID1B acts as a DNA-binding protein that regulates chromatin accessibility. In this study, we used the continuously growing mouse incisor as a model to investigate the role of ARID1B in regulating mesenchymal stem cell (MSC) home",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/38-3MNC"
+    },
+    {
+      "title": "Investigating the interactions between the mouse incisor's vasculature and mesenchymal stem cells.",
+      "kind": "FaceBase dataset",
+      "date": "2024-06-19",
+      "summary": "We investigate the role of vasculature in regulating stem cell homeostasis in the mouse incisors using RNA-seq and scRNAseq.\nThe RNA-seq data include in this dataset is featured in the publication listed below while the scRNA-seq files are not used in any publication yet.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/5E-Q6GC"
+    },
+    {
+      "title": "Whole exome and whole genome sequencing of craniofacial microsomia patients and their families",
+      "kind": "FaceBase dataset",
+      "date": "2024-05-30",
+      "summary": "Sequencing data are available for a total of 591 individuals, including 264 affected individuals and 327 unaffected family members.\n\nFamilies in whole genome sequencing included:\n- 26 trios of two parents and one child\n- two parent-child duos\n- one pair of affected siblings\n- one quad with two affected siblings\n- five members of a family with two affected second cousins\n\nFamilies in whole exome sequencing included:\n-",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/49-7STP"
+    },
+    {
+      "title": "Salivary tissue recombination can modify cell fate",
+      "kind": "FaceBase dataset",
+      "date": "2024-05-16",
+      "summary": "Single cell RNA-seq analyses of 1) E13 submandibular (SMG), 2) E13 parotid (PG), 3) E13 SMG cultured for 6 days (roughly equivalent to E17 SMG), 4) E13 PG cultured for 6 days (equivalent to E17 PG), 5) E13 SMG epithelium cultured for 6 days with E13 PG (heterotypic tissue recombination), 6) E13 PG epithelium cultured for 6 days with E13 SMG (heterotypic tissue recombination).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/4Y-GHEM"
+    },
+    {
+      "title": "Dental Score",
+      "kind": "FaceBase dataset",
+      "date": "2024-02-27",
+      "summary": "In this project we examined the relationship between oral health and cardiovascular disease by performing a detailed oral/ periodontal examination on a sample of 553 adults from the greater Pittsburgh region who were already participating in the Heart Score Study - which was gathering longitudinal information on their cardiovascular health. In addition, we obtained DNA from these individuals to search for genetic var",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3P-4VSA"
+    },
+    {
+      "title": "BRD4 binds to active cranial neural crest enhancers to regulate RUNX2 activity during osteoblast differentiation",
+      "kind": "FaceBase dataset",
+      "date": "2024-01-11",
+      "summary": "Cornelia de Lange syndrome (CdLS) is a congenital disorder featuring facial dysmorphism, postnatal growth deficits, cognitive disability, and upper limb abnormalities. CdLS is genetically heterogeneous with cases arising from mutation of BRD4, a bromodomain protein that binds and reads acetylated histones. In this study we have modeled CdLS facial pathology through mouse neural crest cell (NCC) specific mutation of B",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/44-HVCJ"
+    },
+    {
+      "title": "Single cell RNA sequencing (scRNA-seq) of E13.5 mouse anterior palate",
+      "kind": "FaceBase dataset",
+      "date": "2023-11-13",
+      "summary": "We performed scRNA of the anterior third of the palate shelves from three independent wild type E13.5 mice from the same litter.  \n\n**Background**: Cleft palate is one of the most prevalent birth defects. Mice are useful for studying palate development because of their morphological and genetic similarities to humans. In mice, palate development occurs between embryonic days (E)11.5 to 15.5. Single cell transcription",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/48-EJN8"
+    },
+    {
+      "title": "Single-cell RNA-seq and single-nucleus ATAC-seq analysis of mouse embryonic tissue",
+      "kind": "FaceBase dataset",
+      "date": "2023-09-06",
+      "summary": "To provide a higher-resolution view of the enhancer landscape of craniofacial development, we complemented our maps of human craniofacial enhancers with single cell-resolved data from mouse embryonic craniofacial tissues, with the goal to identify the cell type specificity of individual enhancers. This dataset contains single-cell RNA-seq data from mouse facial tissue isolated from e11.5, e12.5, and e13.5. It also co",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3C-4R98"
+    },
+    {
+      "title": "RNA-seq, ChIP-seq and ATAC-seq analysis of human fetal tissue",
+      "kind": "FaceBase dataset",
+      "date": "2023-07-19",
+      "summary": "Repository for RNA-seq, ChIP-seq and ATAC-seq datasets for human craniofacial tissues. Human embryonic face tissue was received as de-identified, frozen samples from the Human Developmental Biology Resource (Newcastle University, UK). Primary data from the following embryonic samples were generated for this study: post conception weeks 7 and 8 whole face samples comprising three samples at Carnegie stage (CS)18, one ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3C-4G62"
+    },
+    {
+      "title": "Craniofacial Dysmorphology Associated with Phelan-McDermid Syndrome",
+      "kind": "FaceBase dataset",
+      "date": "2023-05-13",
+      "summary": "[Phelan-McDermid syndrome (PMS)](https://www.facebase.org/id/1-VGNP), a disorder that has been diagnosed in over 1500 individuals, results from deletion of the distal long arm of chromosome 22. This syndrome is associated with structural birth defects, including craniofacial defects and limb defects. The craniofacial defects include dolicocephaly, flat midface, and wide brow among others, although these characteristi",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1A-BWJ8"
+    },
+    {
+      "title": "RNAseq and scRNAseq profiling of the mouse incisor and trigeminal ganglion",
+      "kind": "FaceBase dataset",
+      "date": "2023-04-10",
+      "summary": "**scRNAseq**\nThis study has a dynamic spatiotemporal single-cell regulatory atlas and reveals the landscape of transcriptional heterogeneity, and defines the cellular domains during the progression of cranial neural crest cell (CNCC)-derived dental lineage diversification. The study identifies cell type-specific gene regulatory networks (GRNs) during CNCC-derived dental lineage development. \n**RNAseq**\nThis study com",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/28-NSBT"
+    },
+    {
+      "title": "Transcriptional profiles (RNA-seq) of incisor tooth germ and adjacent vestibular lamina of E14 murine embryos",
+      "kind": "FaceBase dataset",
+      "date": "2023-03-22",
+      "summary": "This Bulk RNA-seq transcriptomic datasets created from dissected oral tissue from E14 WT (CD1) mouse embryonic lower jaws, comparing the forming vestibular lamina (structure that creates the oral vestibule) and the adjacent incisor tooth germ, which forms from the dental lamina. No previous transcriptomic data is available that specifically focuses on the vestibular lamina. This wildtype murine dataset therefore fill",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2T-8JMG"
+    },
+    {
+      "title": "RNAseq profiling of the mouse soft palatal development",
+      "kind": "FaceBase dataset",
+      "date": "2023-02-27",
+      "summary": "The goal of this study is to compare transcriptome profiling (RNA-seq) of soft palatal tissue at E14.0 between control and Osr2-Cre;B-Cateninfl/fl",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2K-R8GJ"
+    },
+    {
+      "title": "scRNAseq profiling of the mouse pharyngeal muscle development",
+      "kind": "FaceBase dataset",
+      "date": "2023-01-30",
+      "summary": "In the present work, we investigated the mechanism that regulates perimysial-to-myogenic communication using the development of the pharyngeal muscle LVP as a model. Using unbiased single-cell RNAseq (scRNAseq) data analysis combined with mouse genetic approaches, we identified TGF-β signaling as the predominant signaling activity that enables the perimysial cells to interact with the adjacent myogenic cells during l",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2H-0NZE"
+    },
+    {
+      "title": "Live imaging of secondary palate fusion in conditional Bax; Bak mutants vs controls",
+      "kind": "FaceBase dataset",
+      "date": "2022-07-28",
+      "summary": "We performed _ex vivo_ live imaging of sagittal thick sections to observe MES removal in the secondary palate in _CrectTg/0; R26mTmG/+_ embryos. We initiated imaging at multiple time points between E14.75 and E15.5 in order to gain a comprehensive understanding of epithelial behaviors during MES removal. First, by live imaging the mid-anterior MES beginning at E14.75, we observed initial small breaks in the epitheliu",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1D-PEMG"
+    },
+    {
+      "title": "Live imaging of collective migration in secondary palate fusion",
+      "kind": "FaceBase dataset",
+      "date": "2022-07-28",
+      "summary": "To determine how midline epithelial seam cells of the secondary palate moved as a collective, we used the nuclear _R26nTnG_ Cre reporter to track individual nuclei. Following individual cells of a trail from the middle palate revealed that, although some rearrangements occurred within epithelial streams, the nuclei moved collectively from positions deeper within the seam to the oral epithelium. Although the paths of ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1D-PEMM"
+    },
+    {
+      "title": "RNA-seq analysis of control and Kdm6b mutant mouse palatal tissue at E12.5",
+      "kind": "FaceBase dataset",
+      "date": "2022-05-31",
+      "summary": "Transcriptional profiles (RNA-seq) of E12.5 palatal tissue from control and Kdm6b mutant (Wnt1Cre;Kdm6bfl/fl) mice.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/Z-2NMR"
+    },
+    {
+      "title": "RNA-sequencing of total RNA from E10.5 wild-type, Six1+/- and Six1-/- mouse 1st arches (mandibular arch ventral+intermediate domains)",
+      "kind": "FaceBase dataset",
+      "date": "2022-05-31",
+      "summary": "RNA-sequencing of total RNA from  E10.5 wild-type, Six1+/- and Six1-/- mouse mandibular arches (ventral+intermediate domains).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YNZC"
+    },
+    {
+      "title": "Single cell transcriptomics of the talpid2 avian mutant mandibular prominence",
+      "kind": "FaceBase dataset",
+      "date": "2022-03-14",
+      "summary": "We dissected mandibular prominences from control and talpid2 avian embryos at HH26, and sequenced via Chromium Single Cell 3' v3",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/R-PPWJ"
+    },
+    {
+      "title": "RNA-seq analysis of temporomandibular joint osteoarthritis (TMJOA) mouse model",
+      "kind": "FaceBase dataset",
+      "date": "2022-03-07",
+      "summary": "Gli1+ cells are osteogenic progenitors that contribute to subchondral bone formation and homeostasis in the mandibular condyle of the temporomandibular joint (TMJ) in vivo. We found that, during the development of osteoarthritis, Gli1+ osteogenic progenitors and their descendants expand and commit to the osteoblastic lineage with uneven distribution, resulting in abnormal subchondral bone remodeling.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X42W"
+    },
+    {
+      "title": "IMPC: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the [International Mouse Phenotyping Consortium](http://www.mousephenotype.org). The IMPC data are available for sharing and adaptation under the [Creative Commons Attribution 4.0 International license](https://creativec",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-JZA6"
+    },
+    {
+      "title": "Longshanks: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Longshanks source data._\n\n**Selected abstract(s):**\n\n**(1) Impacts of genetic correlation on the independent evolution of body mass and skeletal size in mammals:**\n\nMammals show a predictable scaling relationship bet",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KFBE"
+    },
+    {
+      "title": "Enhancer: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Enhancer source data._\n\n**Selected abstract(s):**\n\n**(1) Fine tuning of craniofacial morphology by distant-acting enhancers:**\n\nThe shape of the human face and skull is largely genetically determined, but the genetic",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KB02"
+    },
+    {
+      "title": "Hybrid: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Hybrid source data._\n\n**Selected abstract(s):**\n\n**(1) Craniomandibular form and body size variation of first generation mouse hybrids -- a model for hominin hybridization:**\n\nHybridization occurs in a number of mamm",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KB32"
+    },
+    {
+      "title": "Fgf: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images and dense anatomical landmarks, all of which were generated for MusMorph. These data were derived from the Fgf source data._\n\n**Selected abstract(s):**\n\n**(1) Developmental nonlinearity drives phenotypic robustness:**\n\nRobustness to perturbation is a fundamental feature of complex organisms. Mutations are the raw material for evolution, yet robustness ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-JVEM"
+    },
+    {
+      "title": "B9d: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This unpublished dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the B9d source data._\n\nThe dataset is primarily based on the [B9d1 gene](https://www.alliancegenome.org/gene/MGI:1351471), which: Enables hedgehog receptor activity. Acts upstream of or within several process",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-JQMM"
+    },
+    {
+      "title": "Spry: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Spry source data._\n\n**Selected abstract(s):**\n\n**(1) The interaction of genetic background and mutational effects in regulation of mouse craniofacial shape:**\n\nInbred genetic background significantly influences the e",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-JZAM"
+    },
+    {
+      "title": "MPS: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the MPS source data._\n\n**Selected abstract(s):**\n\n**(1) Angiotensin receptor blockade mediated amelioration of mucopolysaccharidosis type I cardiac and craniofacial pathology:**\n\nMucopolysaccharidosis type I (MPS IH) is ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KFBY"
+    },
+    {
+      "title": "Pten: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Pten source data._\n\n**Selected abstract(s):**\n\n**(1) Inactivation of Pten in osteo-chondroprogenitor cells leads to epiphyseal growth plate abnormalities and skeletal overgrowth:**\n\nTo study the role of the [Pten](ht",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KFZJ"
+    },
+    {
+      "title": "Brachymorph: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Brachymorph source data._\n\n**Selected abstract(s):**\n\n**(1) The brachymorph mouse and the developmental-genetic basis for canalization and morphological integration:**\n\nAlthough it is well known that many mutations i",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KB1W"
+    },
+    {
+      "title": "Brain-Face: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Brain-Face source data._\n\n**Selected abstract(s):**\n\n**(1) Short-faced mice and developmental interactions between the brain and the face:**\n\nThe length of the face represents an important axis of variation in mammal",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KB3J"
+    },
+    {
+      "title": "Nipbl: A standardized mouse morphology dataset for MusMorph",
+      "kind": "FaceBase dataset",
+      "date": "2021-11-05",
+      "summary": "_This dataset contains processed micro-computed tomography images, dense anatomical landmarks, and segmentations (if available), all of which were generated for MusMorph. These data were derived from the Nipbl source data._\n\n**Selected abstract(s):**\n\n**(1) Multiple organ system defects and transcriptional dysregulation in the Nipbl+/− mouse, a model of Cornelia de Lange Syndrome:**\n\nCornelia de Lange Syndrome (CdLS)",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3-KB0J"
+    },
+    {
+      "title": "Single Cell Sequencing - Sagittal Suture, Wild Type (E18.5, PN10, PN28)",
+      "kind": "FaceBase dataset",
+      "date": "2021-10-21",
+      "summary": "Single Cell RNA-Seq library is from pooled C57BL/6J (W) mice, at the development stage TS26/E18.5 (E18) and postnatal day 28 (PN28) from the sagittal suture (S). “scWSE18_340”, indicates single cell data, WT, sagittal suture, E18.5, from sequencing library 340. Single cell libraries are prepared after protease digestion of the sutures on a 10x Chromium instrument model GCG-SR-1 using the Chromium Single Cell Gene Exp",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2-55E8"
+    },
+    {
+      "title": "Coronal Suture, WT, Fgfr2+/S252W (Apert syndrome mouse model), Twist1+/- (Saethre-Chotzen syndrome mouse model), E14.5",
+      "kind": "FaceBase dataset",
+      "date": "2021-09-03",
+      "summary": "RNA-Seq libraries are from laser capture microdissections of C57BL/6J Fgfr2+/+ (W) and C57BL/6J Apert syndrome EIIA-Cre+;Fgfr2+/S252W (A) mice, at development stages TS22/E14.5, from the coronal suture (S), with 5 biological replicates (1-5), of the suture mesenchyme (SM), frontal (FR) osteogenic fronts, and parietal (PA) osteogenic fronts. “W4C1SM”, for example, indicates WT, E14.5, coronal suture, replicate 1, sutu",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2-557P"
+    },
+    {
+      "title": "Generation and Characterization of a Slc13a5 Knock-in Mouse Model with C-terminus Flag",
+      "kind": "FaceBase dataset",
+      "date": "2021-07-12",
+      "summary": "A _Slc13a5_ wild-type sequence with a 1X FLAG epitope before the C-terminal codon was generated in the C57BL/6J background using the conventional KI strategy. This mouse model is useful for sensitive and specific immunolocalization of the transporter, which is critical for interpretation of its function. The coding exons and exon/intron borders of the F2 generation were confirmed by Sanger sequencing.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-Y7T8"
+    },
+    {
+      "title": "micro CT of Tfap2a;Tfap2b;Crect mutant and control mice",
+      "kind": "FaceBase dataset",
+      "date": "2021-06-29",
+      "summary": "Tiff stacks from micro CT scans of mutant (Tfap2a fl/fl; Tfap2b fl/fl; Crect) and control (Tfap2a fl/wt; Tfap2b fl/wt; Crect) mouse heads at E18.5. Teeth were segmented as described in the Protocol and the isosurfaces of each tooth are included here as stl files including upper and lower first incisors (I1), and upper and lower first and second molars (M1-M2).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YBWE"
+    },
+    {
+      "title": "micro CT of Tfap2a;Tfap2b;Wnt1-Cre mutant and control mice",
+      "kind": "FaceBase dataset",
+      "date": "2021-06-29",
+      "summary": "Tiff stacks from micro CT scans of mutant (Tfap2a fl/fl; Tfap2b fl/fl; Wnt1-Cre) and control (Tfap2a fl/wt; Tfap2b fl/wt; Wnt1-Cre) mouse heads at E18.5. Teeth were segmented as described in the Protocol and the isosurfaces of each tooth are included here as stl files including upper and lower first incisors (I1), and upper and lower first and second molars (M1-M2).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YBXR"
+    },
+    {
+      "title": "Timing of mouse molar formation is not influenced by jaw length including retromolar space",
+      "kind": "FaceBase dataset",
+      "date": "2021-06-07",
+      "summary": "These data encompass craniofacial and dental development in wild-type mice ranging in age from embryonic day (E) 10 to postnatal day (P) 32. Scans were collected at the BioMedical Imaging & Therapy (BMIT) beamline at the Canadian Light Source synchrotron.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YBZ6"
+    },
+    {
+      "title": "Runx2 plays a critical role in tooth root development",
+      "kind": "FaceBase dataset",
+      "date": "2021-05-17",
+      "summary": "The gene Runt-related transcription factor2 (Runx2) is a principal regulator of bone and cartilage differentiation, proliferation, and maintenance. Runx2 is essential for mesenchymal stem cells (MSCs) to differentiate into osteoblasts. In mouse embryos, Runx2 exerts an influence in the alveolar remodeling process during tooth eruption. RUNX2 is expressed in a subpopulation of GLI1+ root progenitor cells, and that los",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YKN2"
+    },
+    {
+      "title": "Single Cell RNA-Sequencing of wild-type mouse mandible at E10.5, E12.5, and E14.5",
+      "kind": "FaceBase dataset",
+      "date": "2021-05-17",
+      "summary": "Neural crest cells contribute to a diverse array of cell types during embryonic development. Dysregulation of neural crest cells leads to congenital malformations and diseases. It is unknown whether post-migratory cranial neural crest (CNC) cells undergo dynamic cellular movement and how the process of cell fate decision occurs within the first pharyngeal arch. Using single-cell RNA sequencing and RNAscope analyses, ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-DTK2"
+    },
+    {
+      "title": "Runx2-Twist1 interaction coordinates cranial neural crest guidance of soft palate myogenesis",
+      "kind": "FaceBase dataset",
+      "date": "2021-05-17",
+      "summary": "Cranial neural crest (CNC) cells give rise to bone, cartilage, tendons, and ligaments of the vertebrate craniofacial musculoskeletal complex, as well as regulate mesoderm-derived craniofacial muscle development through cell-cell interaction. Using the mouse soft palate as a model, we performed an unbiased single-cell RNA-seq analysis to investigate the heterogeneity and lineage commitment of CNC derivatives during cr",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X280"
+    },
+    {
+      "title": "Reciprocal interaction between mesenchymal stem cells and transit amplifying cells regulates tissue homeostasis",
+      "kind": "FaceBase dataset",
+      "date": "2021-05-17",
+      "summary": "Interaction between adult stem cells and their progeny is critical for tissue homeostasis and regeneration. In multiple organs, mesenchymal stem cells (MSCs) give rise to transit amplifying cells (TACs), which then differentiate into different cell types. However, whether and how MSCs interact with TACs remains unknown. Using the adult mouse incisor as a model, we present in vivo evidence that TACs and MSCs have dist",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YKAR"
+    },
+    {
+      "title": "TF-miRNA interaction pairs from E12.5 to E13.5 at maxillary processes",
+      "kind": "FaceBase dataset",
+      "date": "2021-05-13",
+      "summary": "The excel file contains three sheets, “gene-TF”, “gene-miRNA”, and “miRNA-TF”, with the interaction pairs between molecules. At least one molecule in the pair is differentially expressed from E12.5 to E13.5 at maxillary processes. \n\"gene-TF\" sheet: column1 is gene, column 2 is TF, column 3 is the regulation type between gene and TF, column 4 is regulation direction.\n\"gene-miRNA\" sheet: column1 is gene, column 2 is mi",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YPST"
+    },
+    {
+      "title": "TF-miRNA interaction pairs from E11.5 to E12.5 at maxillary processes",
+      "kind": "FaceBase dataset",
+      "date": "2021-05-13",
+      "summary": "The excel file contains three sheets, “gene-TF”, “gene-miRNA”, and “miRNA-TF”, with the interaction pairs between molecules. At least one molecule in the pair is differentially expressed from E11.5 to E12.5 at maxillary processes. \n\"gene-TF\" sheet: column1 is gene, column 2 is TF, column 3 is the regulation type between gene and TF, column 4 is regulation direction.\n\"gene-miRNA\" sheet: column1 is gene, column 2 is mi",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-YPSR"
+    },
+    {
+      "title": "Effects of Odaph Gene Knock-out on Mouse Tooth Development",
+      "kind": "FaceBase dataset",
+      "date": "2021-05-13",
+      "summary": "An _Odaph_^Cys41*^ mouse model homologous to human _ODAPH_ mutation (p.Cys43*) was generated in C57BL/6J background using CRISPR/Cas9. The coding exons and exon/intron borders of the F2 generation were confirmed by Sanger sequencing.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-MCT2"
+    },
+    {
+      "title": "Ror2-mediated non-canonical Wnt signaling regulates Cdc42 and cell proliferation during root development",
+      "kind": "FaceBase dataset",
+      "date": "2021-03-03",
+      "summary": "The control of size and shape is an important part of regulatory process during organogenesis. Tooth formation is a highly complex process that fine-tunes the size and shape of the tooth, which are crucial for its physiological functions. Each tooth consists of a crown and one or more roots. Despite comprehensive knowledge of the mechanism that regulates early tooth crown development, we have limited understanding of",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-Y7W6"
+    },
+    {
+      "title": "Expression profiles of patterning genes in pharyngeal arches of zebrafish embryos from 20hpf to 48hpf",
+      "kind": "FaceBase dataset",
+      "date": "2021-01-29",
+      "summary": "NanoString counts for pharyngeal arch patterning genes from dissociated and FAC-sorted pharyngeal arches from _fli1a:GFP;sox10:dsRed_ double-transgenic zebrafish embryos.\n\nFields in Array Data are:\n\n- Gene Name\n- Accession #: NCBI accession number for the gene transcript being measured.\n- Class Name: Indicates whether the measurement is \"Endogenous\", applied to genes being measured; \"Housekeeping\", used to normalize ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-Y6KR"
+    },
+    {
+      "title": "Runx2+ niche cells maintain mesenchymal tissue homeostasis through IGF signaling",
+      "kind": "FaceBase dataset",
+      "date": "2020-12-14",
+      "summary": "Stem cell niches provide a microenvironment to support the self-renewal and multi-lineage differentiation of stem cells. Cell-cell interactions within the stem cell niche are essential for maintaining tissue homeostasis. However, the niche cells supporting mesenchymal stem cells (MSCs) are largely unknown. Using single-cell RNA sequencing, we show heterogeneity among Gli1+ MSCs and identify a subpopulation of Runx2+/",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-RK82"
+    },
+    {
+      "title": "Gene summary for Fgfr1",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Gene expression in the mandibular and maxillary arches\n\n_Fgfr1_ is expressed in the maxillary and mandibular mesenchyme at E10.5. At E12.5, it is expressed in the odontogenic and osteogenic mesenchyme of maxilla and mandible. At E14.5, Fgfr1 is expressed in the molar epithelium, the osteogenic mesenchyme of the mandible, and in the tongue.\n\n| E10.5 | E12.5 | E14.5 |\n|-------|-------|-------|\n| ![ImageWithSize](/h",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5HG"
+    },
+    {
+      "title": "Gene summary for Etv5",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "#### Gene expression in the soft palate:\nIn the E14.5 soft palate, _Etv5_ is expressed predominantly in the cranial neural crest (CNC)-derived cells in the TVP, PLG and LVP regions. _Etv5_ expression can be also found in myogenic cells, epithelium, mesenchyme surrounding the epithelium, and parts of the pterygoid plate.  \n\n![Etv5 soft palate E14.5](https://www.facebase.org/hatrac/facebase/genesummaries/E14.5-Etv5.jpg",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5S8"
+    },
+    {
+      "title": "Gene summary for Osr2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&amp;singleSearch=knownCanonical&amp;position=OSR2) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&amp;singleSearch=knownCanonical&amp;position=OSR2) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg18&amp;singleSearch=knownCanonical&amp;position=OSR2) | [hg19](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&amp;singleSearch=k",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5KR"
+    },
+    {
+      "title": "Gene summary for Lhx6",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Gene expression in the mandibular and maxillary arches\n\n_Lhx6_ is expressed in the maxillary mesenchyme and oral region of the mandibular mesenchyme at E10.5. At E12.5, it is expressed in odontogenic mesenchyme, tongue mesenchyme, and oral region of the palate. At E14.5, it is expressed in the odontogenic mesenchyme and oral region of the palate. Expression is particularly strong in the odontogenic mesenchyme at ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5Q8"
+    },
+    {
+      "title": "Gene summary for Runx2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&amp;singleSearch=knownCanonical&amp;position=RUNX2) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&amp;singleSearch=knownCanonical&amp;position=RUNX2) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg18&amp;singleSearch=knownCanonical&amp;position=RUNX2) | [hg19](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&amp;singleSearc",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5MR"
+    },
+    {
+      "title": "Gene summary for Tgfbr2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?org=mouse&amp;db=mm9&amp;position=chr9%3A115996813-116084481&amp;refGene=pack&amp;hgFind_matches=NM_009371%2C) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?org=mouse&amp;db=mm10&amp;position=chr9%3A116087695-116175363&amp;refGene=pack&amp;hgFind_matches=NM_009371%2C) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?org=human&amp;db=hg18&amp;po",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5P0"
+    },
+    {
+      "title": "Gene summary for Gli1",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "#### Genome Browser Links:\n\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&amp;singleSearch=knownCanonical&amp;position=GLI1) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&amp;singleSearch=knownCanonical&amp;position=GLI1) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg18&amp;singleSearch=knownCanonical&amp;position=GLI1) | [hg19](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&amp;singleSearc",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5J8"
+    },
+    {
+      "title": "Gene summary for IRF6",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?org=mouse&amp;db=mm9&amp;position=chr1%3A194979306-194998229&amp;refGene=pack&amp;hgFind_matches=NM_016851%2C) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?org=mouse&amp;db=mm10&amp;position=chr1%3A193153112-193172035&amp;refGene=pack&amp;hgFind_matches=NM_016851%2C) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?org=human&amp;db=hg18&amp;po",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5K8"
+    },
+    {
+      "title": "Gene summary for Pitx2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&amp;singleSearch=knownCanonical&amp;position=PITX2) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&amp;singleSearch=knownCanonical&amp;position=PITX2) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg18&amp;singleSearch=knownCanonical&amp;position=PITX2) | [hg19](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&amp;singleSearc",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5M8"
+    },
+    {
+      "title": "Gene summary for Col2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "#### Gene expression in the mandibular and maxillary arches:\n\nType 2 Collagen (_Col2_) is expressed in the mesenchyme of the mandibular and maxillary arches at E10.5. It is also expressed in the chondroblasts of the Meckel’s cartilage from E12.5.\n\n| E10.5 | E12.5 | E14.5 |\n|-------|-------|-------|\n| ![ImageWithSize](/hatrac/facebase/genesummaries/col2-10.5.jpg){width=280 height=214} | ![ImageWithSize](/hatrac/faceba",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5FG"
+    },
+    {
+      "title": "Gene summary for Pax9",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Gene expression in the mandibular and maxillary arches\n\n_Pax9_ is expressed in the odontogenic mesenchyme at E10.5 and E12.5. At E12.5, it is also expressed in the tongue. At E14.5, it is expressed in the odontogenic mesenchyme, Meckel’s cartilage, differentiated osteoblasts in maxilla and mandible, oral and medial regions of the palate, tongue muscles and mesenchyme, and sublingual muscles.\n\n| E10.5 | E12.5 | E1",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5M0"
+    },
+    {
+      "title": "Gene summary for Col1",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "#### Gene expression in the mandibular and maxillary arches\n\nType 1 Collagen (_Col1_) is expressed in differentiated osteoblasts in the mandible and the maxilla, from E13.5.\n\n| E10.5 | E12.5 | E14.5 |\n|-------|-------|-------|\n| ![ImageWithSize](/hatrac/facebase/genesummaries/col1-10.5.jpg){width=280 height=214} | ![ImageWithSize](/hatrac/facebase/genesummaries/col1-12.5.jpg){width=280 height=214} | ![ImageWithSize](",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5F8"
+    },
+    {
+      "title": "Gene summary for FGF10",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&amp;singleSearch=knownCanonical&amp;position=FGF10) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&amp;singleSearch=knownCanonical&amp;position=FGF10) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg18&amp;singleSearch=knownCanonical&amp;position=FGF10) | [hg19](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&amp;singleSearc",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5H8"
+    },
+    {
+      "title": "Gene summary for FGF3",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Gene expression in the mandibular and maxillary arches\n\n_Fgf3_ is expressed in the epithelium of medial nasal process at E10.5. At E12.5, it is expressed in the tongue mesenchyme where muscle will form and dental papilla. At E14.5, _Fgf3_ is expressed in the dental papilla.\n\n![Fgf3 at E10.5, E12.5 and E14.5](/hatrac/facebase/genesummaries/FGF3_E10.5.jpeg \"Fgf3\"){width=800 height=240}\n\n#### Sources:\n\n- Monika Bach",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5QG"
+    },
+    {
+      "title": "Gene summary for Wnt5a",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Gene expression in the mandibular and maxillary arches\n\n_Wnt5a_ is expressed in the epithelium and mesenchyme of the frontonasal process and distal maxillary and mandibular arches at E10.5. At E12.5, it is expressed in the mesenchyme of palatal shelf, outer layer of tongue mesenchyme and area surrounding the mandible. At E14.5, _Wnt5a_ is expressed in the dental follicle, outer layer of tongue mesenchyme and area",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5R0"
+    },
+    {
+      "title": "Gene summary for Shox2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&amp;singleSearch=knownCanonical&amp;position=SHOX2) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&amp;singleSearch=knownCanonical&amp;position=SHOX2) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg18&amp;singleSearch=knownCanonical&amp;position=SHOX2) | [hg19](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&amp;singleSearc",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5N0"
+    },
+    {
+      "title": "Gene summary for Fgfr2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Genome Browser Links\n\n[mm9](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&amp;singleSearch=knownCanonical&amp;position=FGFR2) | [mm10](http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm10&amp;singleSearch=knownCanonical&amp;position=FGFR2) | [hg18](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg18&amp;singleSearch=knownCanonical&amp;position=FGFR2) | [hg19](http://genome.ucsc.edu/cgi-bin/hgTracks?db=hg19&amp;singleSear",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5HR"
+    },
+    {
+      "title": "Gene summary for Hand2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Gene expression in the mandibular and maxillary arches\n\n_Hand2_ is expressed in the distal mesenchyme of the mandibular arch at E10.5. At E12.5, it is expressed in the osteogenic mesenchyme adjacent to the Meckel’s cartilage, and the tongue mesenchyme. At E14.5, _Hand2_ is expressed in the differentiated osteoblasts of the mandible, the tongue mesenchyme, and the sublingual muscles.\n\n| E10.5 | E12.5 | E14.5 |\n|--",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5K0"
+    },
+    {
+      "title": "Gene summary for Gli2",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-12",
+      "summary": "### Gene expression in the mandibular and maxillary arches\n\n_Gli2_ is expressed in the mesenchyme of the maxillary and mandibular arches at E10.5. In the mandibular arch, the most proximal region does not express Gli2. At E12.5, it is expressed in the osteogenic and odontogenic mesenchyme of maxilla and mandible. At E14.5, Gli2 is expressed in differentiated osteoblasts of maxilla and mandible, oral mesenchyme of the",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X5JG"
+    },
+    {
+      "title": "Coronal Suture, Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+      "kind": "FaceBase dataset",
+      "date": "2020-10-09",
+      "summary": "RNA-Seq libraries are from laser capture microdissections of C57BL/6J Apert syndrome EIIA-Cre+;Fgfr2+/S252W (A) mice, at development stages TS24/E16.5 (6) and TS26/E18.5 (8), from the coronal suture (C), with 5 biological replicates (1-5), of the suture mesenchyme (SM), and frontal (FR) and parietal (PA) osteogenic fronts. “A8C1SM”, for example, indicates Apert, E18.5, coronal suture, replicate 1, suture mesenchyme. ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-X71J"
+    },
+    {
+      "title": "Histology and schematic overview of mouse soft palate development",
+      "kind": "FaceBase dataset",
+      "date": "2020-09-28",
+      "summary": "Orofacial clefting includes several distinct anatomic malformations affecting the upper lip and hard and soft palate. The etiology of orofacial clefting is multifactorial, including genetic or environmental factors or their combination. A large body of work has focused on the molecular etiology of cleft lip and clefts of the hard palate, but study of the underlying etiology of soft palate clefts is an emerging field.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-778P"
+    },
+    {
+      "title": "Tooth root development in Osr2-Cre;Ezh2fl/fl and control mice",
+      "kind": "FaceBase dataset",
+      "date": "2020-09-21",
+      "summary": "Patterning is a critical step during organogenesis and is closely associated with the physiological function of organs. Tooth root shapes are finely tuned to provide precise occlusal support to facilitate the function of each tooth type. However, the mechanism regulating tooth root patterning and development is largely unknown. In this study, we provide the first in vivo evidence demonstrating that Ezh2 in the dental",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-DY3G"
+    },
+    {
+      "title": "Premaxillary-Maxillary Suture, WT and Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+      "kind": "FaceBase dataset",
+      "date": "2020-08-13",
+      "summary": "RNA-Seq libraries are from laser capture microdissections of C57BL/6J Fgfr2+/+ (W) and C57BL/6J Apert syndrome EIIA-Cre+;Fgfr2+/S252W (A) mice, at development stages TS24/E16.5 (6) and TS26/E18.5 (8), from the premaxillary-maxillary suture (PM), with 5 biological replicates (1-5), of the suture mesenchyme (SM) and premaxillary (PM) and maxillary (MX) osteogenic fronts. “W8PM1SM”, for example, indicates WT, E18.5, pre",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-T8JG"
+    },
+    {
+      "title": "Sagittal Suture, WT and Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+      "kind": "FaceBase dataset",
+      "date": "2020-08-13",
+      "summary": "RNA-Seq libraries are from laser capture microdissections of C57BL/6J Fgfr2+/+ (W) and C57BL/6J Apert syndrome EIIA-Cre+;Fgfr2+/S252W (A) mice, at development stages TS24/E16.5 (6) and TS26/E18.5 (8), from the sagittal suture (S), with 5 biological replicates (1-5), of the suture mesenchyme (SM) and parietal (PA) osteogenic fronts. “W8S1SM”, for example, indicates WT, E18.5, sagittal suture, replicate 1, suture mesen",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-71HY"
+    },
+    {
+      "title": "Normalized expression data from the anterior medial palate in E14.5 mice",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-31",
+      "summary": "These are log2(1 + x) transformed TPM normalized expression values. Genes were annotated using the mm9 reference genome. The data are formatted with rows containing independent samples from the anterior medial palate and columns corresponding to individual Entrez Gene IDs.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-TQAE"
+    },
+    {
+      "title": "Normalized expression data from the posterior oral palate in E14.5 mice",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-31",
+      "summary": "These are log2(1 + x) transformed TPM normalized expression values. Genes were annotated using the mm9 reference genome. The data are formatted with rows containing independent samples from the posterior oral palate and columns corresponding to individual Entrez Gene IDs.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-TQDT"
+    },
+    {
+      "title": "Normalized expression data from the posterior medial palate in E14.5 mice",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-31",
+      "summary": "These are log2(1 + x) transformed TPM normalized expression values. Genes were annotated using the mm9 reference genome. The data are formatted with rows containing independent samples from the posterior medial palate and columns corresponding to individual Entrez Gene IDs.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-TQCP"
+    },
+    {
+      "title": "Normalized expression data from the anterior lateral palate in E14.5 mice",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-31",
+      "summary": "These are log2(1 + x) transformed TPM normalized expression values. Genes were annotated using the mm9 reference genome. The data are formatted with rows containing independent samples from the anterior lateral palate and columns corresponding to individual Entrez Gene IDs.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-TQ9T"
+    },
+    {
+      "title": "Normalized expression data from the posterior nasal palate in E14.5 mice",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-31",
+      "summary": "These are log2(1 + x) transformed TPM normalized expression values. Genes were annotated using the mm9 reference genome. The data are formatted with rows containing independent samples from the posterior nasal palate and columns corresponding to individual Entrez Gene IDs.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-TQD8"
+    },
+    {
+      "title": "An Extended Transcriptome for the Developing Mouse Face",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-21",
+      "summary": "ENSEMBL a gene models are incomplete and are missing many transcripts that are expressed in the developing mouse face. Long non-coding RNAs (lncRNAs), alternative transcription start sites (altTSS), alternative transcription termination sites (altTTS) and alternative splicing are especially under-represented. This dataset extends the ENSEMBL gene models to encompass a more complete representation of the transcripts d",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-96BP"
+    },
+    {
+      "title": "MicroRNA-374a, -4680, and -133b suppress cell proliferation through the regulation of genes associated with human cleft palate in cultured human palate cells.",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-07",
+      "summary": "**BACKGROUND:**\nCleft palate (CP) is the second most common congenital birth defect; however, the relationship between CP-associated genes and epigenetic regulation remains largely unknown. In this study, we investigated the contribution of microRNAs (miRNAs) to cell proliferation and regulation of genes involved in CP development.\n\n**METHODS:**\nIn order to identify all genes for which mutations or association/linkag",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-JVTJ"
+    },
+    {
+      "title": "MicroRNA-655-3p and microRNA-497-5p inhibit cell proliferation in cultured human lip cells through the regulation of genes related to human cleft lip",
+      "kind": "FaceBase dataset",
+      "date": "2020-07-07",
+      "summary": "**BACKGROUND:**\nThe etiology of cleft lip with or without cleft palate (CL/P), a common congenital birth defect, is complex and involves the contribution of genetic and environmental factors. Although many candidate genes have been identified, the regulation and interaction of these genes in CL/P remain unclear. In addition, the contribution of microRNAs (miRNAs), non-coding RNAs that regulate the expression of multi",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-JVRW"
+    },
+    {
+      "title": "RNAseq of Nfic-/- and littermate Nfic+/- control at PN4 days",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-20",
+      "summary": "This study aimed to perform transcriptome profiling of Nfic-/- and corresponding control tooth germ at root initiation stage to identify differentially expressed for key regulators of root development. Coordination between the Hertwig’s Epithelial Root Sheath (HERS) and apical papilla (AP) is crucial for proper root development process. The Hedgehog (Hh) signaling pathway and Nfic are both involved in tooth root deve",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-77AR"
+    },
+    {
+      "title": "RNAseq of Dlx5-/- and littermate controls at E14.5",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-20",
+      "summary": "Craniofacial development depends on cell-cell interactions, coordinated cellular movement and differentiation under the control of regulatory gene networks, which include the distal-less (Dlx) gene family. However, the functional significance of Dlx5 in patterning the oropharyngeal region has remained unknown. Here we show that loss of Dlx5 leads to a shortened soft palate and an absence of the levator veli palatini,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-779P"
+    },
+    {
+      "title": "RNAseq of Ezh2fl/fl and Osr2-Cre;Ezh2fl/fl at PN3 days",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-20",
+      "summary": "Patterning is a critical step during organogenesis and is closely associated with the physiological function of organs. Tooth root shapes are finely tuned to provide precise occlusal support to facilitate the function of each tooth type. However, the mechanism regulating tooth root patterning and development is largely unknown. In this study, we provide the first in vivo evidence demonstrating that Ezh2 in the dental",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-92SR"
+    },
+    {
+      "title": "Gene expression profiling of the mandibular arch in mice with a conditional inactivation of Alk5 at embryonic day E11.5.",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-09",
+      "summary": "The overall goal of this project is to investigate the role of TGF-beta signaling in tissue-tissue interactions between myogenic precursors of craniofacial muscles and cranial neural crest cells (CNCCs). Here, we conducted gene expression profiling of the mandibular arch from mice at embryonic day E11.5 with a CNCC-specific conditional inactivation of the TGF-beta receptor type 1 gene Alk5. These mice provide a model",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-8AB4"
+    },
+    {
+      "title": "Activity of hominin neural crest enhancer in E11.5 transgenic mouse embryo; orthologous to human enhancer near COL13A1.",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Hominin neural crest enhancer with reproducible activity in the forebrain, midbrain, hindbrain, periocular mesenchyme, frontonasal process, maxillary and mandibular prominences of the 1st branchial arch, 2nd branchial arch, proximal limb buds, and dorsal root ganglia.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-70Y8"
+    },
+    {
+      "title": "Activity of predicted Altai Neaderthal neural crest enhancer in E11.5 transgenic mouse embryo, orthologous to the human enhancer located near THBS1.",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Altai predicted neural crest enhancer with no reproducible enhancer activity in at least three embryos. The only two LacZ+ embryos (out of 13 transgenic embryos) show very similar staining in the frontonasal process, maxillary prominence of the 1st branchial arch, and cranial nerves.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-7192"
+    },
+    {
+      "title": "Craniofacial Atlas ChIP-seq data: CS14",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Chromatin State Profiling using multiple histone modifications in human craniofacial tissue spanning 4.5 post conception weeks to 10 pcw. Data are available at GEO (Series GSE97752). The raw FASTQ sequence files are being deposited in dbGAP.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-BB56"
+    },
+    {
+      "title": "Craniofacial Atlas ChIP-seq data: F2",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Chromatin State Profiling using multiple histone modifications in human craniofacial tissue spanning 4.5 post conception weeks to 10 pcw. Data are available at GEO (Series GSE97752). The raw FASTQ sequence files are being deposited in dbGAP.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-CRNJ"
+    },
+    {
+      "title": "Activity of hominin neural crest enhancer in E11.5 transgenic mouse embryo, orthologous to human enhancer near RABGEF1.",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Hominin neural crest enhancer with reproducible activity in the midbrain, hindbrain, frontonasal process, maxillary prominence of the 1st branchial arch, and cranial nerves.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-712G"
+    },
+    {
+      "title": "Activity of Altai Neanderthal neural crest enhancer in E11.5 transgenic mouse embryo, orthologous to human enhancer near PKDCC.",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Altai neural crest enhancer with weak reproducible activity in the nasolacrimal groove, 2nd branchial arch, and dorsal root ganglia.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-715G"
+    },
+    {
+      "title": "Activity of Altai neural crest enhancer in E11.5 transgenic mouse embryo, orthologous to human enhancer near RABGEF1.",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Altai neural crest enhancer with reproducible activity in the frontonasal process, maxillary prominence of the 1st branchial arch, periocular mesenchyme, and cranial nerves.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-711J"
+    },
+    {
+      "title": "Craniofacial Atlas ChIP-seq data: CS13",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Chromatin State Profiling using multiple histone modifications in human craniofacial tissue spanning 4.5 post conception weeks to 10 pcw. Data are available at GEO (Series GSE97752). The raw FASTQ sequence files are being deposited in dbGAP.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-7780"
+    },
+    {
+      "title": "Craniofacial Atlas ChIP-seq data: CS17",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Chromatin State Profiling using multiple histone modifications in human craniofacial tissue spanning 4.5 post conception weeks to 10 pcw. Data are available at GEO (Series GSE97752). The raw FASTQ sequence files are being deposited in dbGAP.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-CRNE"
+    },
+    {
+      "title": "Activity of human neural crest enhancer near PKDCC in E11.5 transgenic mouse embryo – Tg(hg38_chr2:41954152-41954651::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Tg(hg38_chr2:41954152-41954651::LacZ) human neural crest enhancer with weak reproducible activity in the nasolacrimal groove and dorsal root ganglia. Conversely, the orthologous chimp enhancer demonstrates strong, consistent activity in multiple domains.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-713J"
+    },
+    {
+      "title": "Facial shape and allometry quantitative trait loci in the Diversity Outbred mouse",
+      "kind": "FaceBase dataset",
+      "date": "2020-02-06",
+      "summary": "This study maps quantitative trait loci (QTL) for skeletal facial shape using a large sample of Diversity Outbred (DO) mice. We identified 37 facial shape QTL across 20 shape principal components (PCs) using a mixed effects regression that accounts for kinship among observations. The QTL include some previously identified intervals as well as new regions that expand the list of potential targets for future experiment",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-731C"
+    },
+    {
+      "title": "Activity of chicken neural crest enhancer intronic in Zfhx4 in E13.5 transgenic mouse embryos– Tg(galGal6_chr2:119369485-119370436::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2019-08-02",
+      "summary": "Tg(galGal6_chr2:119369485-119370436::LacZ) chicken neural crest enhancer with reproducible activity in the forebrain-midbrain and midbrain-hindbrain junctions, periocular mesenchyme, frontonasal process and maxillary BA1 derived tissues, and limbs.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-70HE"
+    },
+    {
+      "title": "Activity of predicted human neural crest enhancer near Zfhx4 in E13.5 transgenic mouse embryos– Tg(hg38_chr8:76914760-76915623::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2019-08-02",
+      "summary": "Tg(hg38_chr8:76914760-76915623::LacZ) demonstrates no reproducible enhancer activity at E13.5.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-70KP"
+    },
+    {
+      "title": "Activity of human neural crest enhancer near Zfhx4 in E13.5 transgenic mouse embryos– Tg(hg38_chr8:76883303-76884634::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2019-08-02",
+      "summary": "Tg(hg38_chr8:76883303-76884634::LacZ) human neural crest enhancer with reproducible activity in the periocular mesenchyme, posterior forelimb, and ventral limbs.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-70MP"
+    },
+    {
+      "title": "Dent2: Caries in Permanent Dentition",
+      "kind": "FaceBase dataset",
+      "date": "2019-07-02",
+      "summary": "[**Link to project pages of Dent2: Caries in Permanent Dentition**](http://www.facebase.org/hgai/DENT2.html)\ndbGaP Study Accession: [phs000095.v3.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000095.v3.p1)\nPrincipal Investigator: [Mary Marazita](https://www.dental.pitt.edu/person/mary-l-marazita), University of Pittsburgh School of Dental Medicine, Pittsburgh, PA, USA\nFunding Sources:\nU0",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-50E2"
+    },
+    {
+      "title": "OFC1: International Consortium to Identify Genes and Interactions Controlling Oral Clefts- Genome Wide Association Study",
+      "kind": "FaceBase dataset",
+      "date": "2019-07-02",
+      "summary": "[**Link to project pages of OFC1: International Consortium to Identify Genes and Interactions Controlling Oral Clefts- Genome Wide Association Study**](http://www.facebase.org/hgai/OFC1.html)\n\n[dbGap Study Accession: phs000094.v1.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000094.v1.p1)\nPrincipal Investigator: Terri H. Beaty, Johns Hopkins School of Public Health, Baltimore, MD, USA\nFu",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-50DE"
+    },
+    {
+      "title": "OFC4: Genetics of Orofacial Clefts and Related Phenotypes",
+      "kind": "FaceBase dataset",
+      "date": "2019-07-02",
+      "summary": "#### [**Link to HGAI Project page for OFC4: Genetics of Orofacial Clefts and Related Phenotypes**](http://www.facebase.org/hgai/OFC4.html)\n\ndbGaP Study Accession: [phs000774.v2.p1.](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000774.v2.p1) \n\nPrincipal Investigator: [Mary L. Marazita](https://www.dental.pitt.edu/person/mary-l-marazita), University of Pittsburgh, Pittsburgh, PA, USA\n\nFunding",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-50DT"
+    },
+    {
+      "title": "Dent1: Childhood Caries",
+      "kind": "FaceBase dataset",
+      "date": "2019-07-02",
+      "summary": "[**Link to project pages of DENT1: Childhood Caries**](http://www.facebase.org/hgai/DENT1.html)\ndbGaP Study Accession: [phs000095.v3.p1](https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000095.v3.p1)\nPrincipal Investigator: [Mary Marazita](https://www.dental.pitt.edu/person/mary-l-marazita), University of Pittsburgh School of Dental Medicine, Pittsburgh, PA, USA\nFunding Sources:\nU01-DE018903, D",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-50E0"
+    },
+    {
+      "title": "FB0121_Trio WES of 36 yo female and unaffected parents",
+      "kind": "FaceBase dataset",
+      "date": "2019-04-25",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4ZS2"
+    },
+    {
+      "title": "FB0116_16yo female, Cleft palate, VSD, macrocephaly, speech delay",
+      "kind": "FaceBase dataset",
+      "date": "2019-04-25",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4ZQP"
+    },
+    {
+      "title": "Single cell RNA-sequencing of E11.5 Crect; ROSA26-lacZ mouse fusing upper lip and primary palate",
+      "kind": "FaceBase dataset",
+      "date": "2019-04-25",
+      "summary": "Only mouse embryos that were positive for both Crect, an ectoderm specific Cre recombinase transgene, and the ROSA26 LacZ reporter allele were used for this study. Not that these mice are on a mixed genetic background. After isolation of E11.5 embryos with 45 somites, the face was isolated from the head using published procedures. Subsequently, the region of the upper face where the nasal and maxillary prominences ar",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-5004"
+    },
+    {
+      "title": "ChIP-Seq of mouse E15.5 Face (Nose)",
+      "kind": "FaceBase dataset",
+      "date": "2019-04-25",
+      "summary": "We have generated histone ChIP-Seq libraries for dissected mouse nose tissue. We performed ChIP-Seq with markers of active chromatin (H3K27ac, H3K4me1). We also generated a ChIP input library.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4ZW6"
+    },
+    {
+      "title": "Whole-genome transcriptome profiling of E12.5 Wnt1-Cre;Alk5flfl by microarray of maxilla and mandible",
+      "kind": "FaceBase dataset",
+      "date": "2019-04-15",
+      "summary": "Official FaceBase dataset record FB00001008",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4TGT"
+    },
+    {
+      "title": "Cell Proliferation Heat Map of E10.5 mouse embryo",
+      "kind": "FaceBase dataset",
+      "date": "2019-04-15",
+      "summary": "Whole mount staining was used for E10.5 samples. All samples were stained with Ki67 and DAPI. E10.5 whole mount embryos were imaged using Optical Projection Tomography (OPT). Heat maps were generated from images using ImageJ and Amira. Heat maps for E10.5 whole mount embryos showed proliferative cells in specific regions of the embryo.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4TPA"
+    },
+    {
+      "title": "RNAseq of in vitro derived cranial neural crest cells",
+      "kind": "FaceBase dataset",
+      "date": "2019-03-15",
+      "summary": "20 RNAseq samples of in vitro derived human and chimpanzee cranial neural crest cells.\n\n **This is restricted-access human data.**  To gain access to this data, you must first go through the [process outlined here](/odocs/data-guidelines/).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4X9P"
+    },
+    {
+      "title": "Activity of predicted human neural crest enhancer 1.35Mb upstream of SOX9 in transgenic mouse embryos.",
+      "kind": "FaceBase dataset",
+      "date": "2019-03-13",
+      "summary": "Sox9-E1.35Mb shows no replicable enhancer activity at either E9.5 or E11.5.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4XHY"
+    },
+    {
+      "title": "Activity of predicted human neural crest enhancer 1.25Mb  upstream of SOX9 in E11.5 transgenic mouse embryo",
+      "kind": "FaceBase dataset",
+      "date": "2019-03-13",
+      "summary": "Sox9-E1.25Mb shows no replicable enhancer activity at either E9.5 or E11.5.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-4XFJ"
+    },
+    {
+      "title": "FB0057_13yo female with Robin sequence, microglossia, microstomia structure of the oropharynx",
+      "kind": "FaceBase dataset",
+      "date": "2019-01-29",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-415T"
+    },
+    {
+      "title": "Activity of human neural crest enhancer near FAM222A in E11.5 transgenic mouse embryo – Tg(hg38_chr12:109709145-109709901::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2018-12-18",
+      "summary": "Tg(hg38_chr12:109709145-109709901::LacZ) human neural crest enhancer with biased activity in the frontonasal prominence, facial (VII)/vestibulocochlear (VIII) ganglia, heart field, and medial forelimb buds when compared to the orthologous chimp enhancer. Transgenic embryos also show reproducible activity In the midbrain, periocular mesenchyme/optic cup, and floor plate of the neural tube that overlaps with the chimp ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3SM2"
+    },
+    {
+      "title": "Activity of chimp neural crest enhancer near FAM222A in E11.5 transgenic mouse embryo - Tg(panTro4_chr12:110112991-110113747::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2018-12-18",
+      "summary": "Tg(panTro4_chr12:110112991-110113747::LacZ) chimp neural crest enhancer with reproducible activity in the midbrain, optic cup, facial (VII)/vestibulocochlear (VIII) nerves, and floor plate of the neural tube. This enhancer lacks many of the expression domains associated with the orthologous human enhancer, demonstrating human biased activity when comparing these two species.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3SQJ"
+    },
+    {
+      "title": "The Effect of Automated Landmark Identification on Morphometric Analyses Using the Collaborative Cross",
+      "kind": "FaceBase dataset",
+      "date": "2018-11-26",
+      "summary": "Morphometric analysis of anatomical landmarks allows researchers to identify specific differences in craniofacial shape between natural populations or experimental groups, but manually identifying landmarks is time-consuming. Previous studies have shown that image registration based automated landmark identification may adequately replace manual landmarking in certain situations. We compare manually and automatically",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-43F6"
+    },
+    {
+      "title": "FB0023_18mo male with hypertelorism_Candidate Gene: CARD8",
+      "kind": "FaceBase dataset",
+      "date": "2018-10-01",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3SVP"
+    },
+    {
+      "title": "FB0011_9 year old female with single central maxillary incisor_Candidate Gene: SMARC4",
+      "kind": "FaceBase dataset",
+      "date": "2018-10-01",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3V7A"
+    },
+    {
+      "title": "FB0051_6 year old male with hypertelorism (marked), dysmorphic facial features, hypotonia _Candidate Genes: PLXNA3 & NRG2",
+      "kind": "FaceBase dataset",
+      "date": "2018-10-01",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3SVY"
+    },
+    {
+      "title": "FB0015_Male with bilateral cleft lip and palate",
+      "kind": "FaceBase dataset",
+      "date": "2018-10-01",
+      "summary": "The purpose of this study is to collect, process and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used, ",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3V7J"
+    },
+    {
+      "title": "FB0043_3 male cousins with natal teeth and anodontia_Candidate Gene: GRHL3",
+      "kind": "FaceBase dataset",
+      "date": "2018-10-01",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3SVT"
+    },
+    {
+      "title": "FB0062_Proband Only Saliva_Blepharo-cheilo-dontic (BCD) syndrome",
+      "kind": "FaceBase dataset",
+      "date": "2018-08-29",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3VAT"
+    },
+    {
+      "title": "Interpalatine suture, WT and Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+      "kind": "FaceBase dataset",
+      "date": "2018-06-13",
+      "summary": "RNA-Seq libraries are from laser capture microdissections of C57BL/6J Fgfr2+/+ (W) and C57BL/6J Apert syndrome EIIA-Cre+;Fgfr2+/S252W (A) mice, at development stages TS24/E16.5 (6) and TS26/E18.5 (8), from the interpalatine suture (IP), with 5 biological replicates (1-5), of the suture mesenchyme (SM) and interpalatine bone osteogenic front (PL). “W8IP1SM”, for example, indicates WT, E18.5, interpalatine suture, repl",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-3SWE"
+    },
+    {
+      "title": "Single Cell Sequencing - Lambdoid Suture, Wild Type, E18.5, P10 and P28",
+      "kind": "FaceBase dataset",
+      "date": "2018-05-02",
+      "summary": "Single Cell RNA-Seq libraries are from C57BL/6J mice, at development stages TS26/E18.5 (E18), PN10 (P10) and PN28 (P28), from the lambdoid suture (L). “scWLE18_S199”, for example, indicates single cell data, WT, lambdoid suture, E18.5, from sequencing library 199. Single cell libraries are prepared after protease digestion of the sutures on a  10x Chromium instrument model GCG-SR-1 using the Chromium Single Cell Gene",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3V0E"
+    },
+    {
+      "title": "Activity of predicted P. troglodytes neural crest enhancer near ALX4 in E11.5 transgenic mouse embryo - Tg(panTro4_chr11:44486755-44487474::LacZ)",
+      "kind": "FaceBase dataset",
+      "date": "2018-04-06",
+      "summary": "Tg(panTro4_chr11:44486755-44487474::LacZ) shows minimal to no replicable enhancer activity following multiple rounds of injection. Strong lacZ expression was observed in one 1/12 total PCR positive embryos.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3TJA"
+    },
+    {
+      "title": "Activity of human neural crest enhancer near BMPER in E11.5 transgenic mouse embryo - Tg(hg38_chr7:33486073-33487607::LacZ)",
+      "kind": "FaceBase dataset",
+      "date": "2018-04-06",
+      "summary": "Tg(hg38_chr7:33486073-33487607::LacZ) human neural crest enhancer primarily exhibiting expression in the trigeminal ganglion and nerve.  2/8 embryos also express LacZ in the medial frontonasal prominence, periocular mesenchyme, branchial arches, forelimb buds, and somites. This enhancer has relatively low expression in the human frontonasal prominence, demonstrating a species-specific bias in P. troglodytes when thes",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3THE"
+    },
+    {
+      "title": "Activity of P. troglodytes neural crest enhancer near BMPER in E11.5 transgenic mouse embryo - Tg(panTro4_chr7:32036816-32038352::LacZ)",
+      "kind": "FaceBase dataset",
+      "date": "2018-04-06",
+      "summary": "Tg(panTro4_chr7:32036816-32038352::LacZ) neural crest enhancer biased in the frontonasal prominence of P. troglodytes in comparison to activity of the equivalent human enhancer. 6/11 LacZ positive embryos exhibited moderate to strong expression in this region. LacZ signal was also consistently observed in the branchial arches, forebrain, limb buds, and somites.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3TM6"
+    },
+    {
+      "title": "Activity of chimp neural crest enhancer near NARS2 in E11.5 transgenic mouse embryo – Tg(panTro4_chr11:76409267-76410157::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2018-03-22",
+      "summary": "Tg(panTro4_chr11:76409267-76410157::LacZ) chimp neural crest enhancer with activity in the periocular mesenchyme, mandibular prominence of the 1st branchial arch, 2nd branchial arch, proximal forelimb bud, and tail mesenchyme. This enhancer lacks the expression in the forebrain, midbrain, maxillary prominence of the 1st branchial arch, hindlimb bud and midgut, as well as decreased expression in the forelimb bud, somi",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3QQ6"
+    },
+    {
+      "title": "Cell Proliferation Heat Map of E10.5 mouse embryo",
+      "kind": "FaceBase dataset",
+      "date": "2018-03-21",
+      "summary": "Whole mount staining was used for E10.5 samples. All samples were stained with Ki67 and DAPI. E10.5 whole mount embryos were imaged using Optical Projection Tomography (OPT). Heat maps were generated from images using ImageJ and Amira. Heat maps for E10.5 whole mount embryos showed proliferative cells in specific regions of the embryo.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/3RNE"
+    },
+    {
+      "title": "FB0046_6 yo female with craniofacial abnormalities, vertebral anomalies_Candidate Gene: DYNC1H1",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-27",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2B8J"
+    },
+    {
+      "title": "FB0109_Male with Robin sequence, cleft palate, midface hypoplasia, round almond-shaped eyes, negative CMA, positive family Hx_Candidate Gene: HOXB2",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-27",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2BA6"
+    },
+    {
+      "title": "FB0101_Trio WES_2yo male with Cleft palate, aniridia, bilateral club feet, plagiocephaly, cataracts, hypoxemia",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-27",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2B9E"
+    },
+    {
+      "title": "FB0067_Trio WES_5yo female with Pierre Robin Syndrome, cleft palate ASD s/p repair",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-27",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2B8P"
+    },
+    {
+      "title": "FB0099 Female proband with Robin sequence, cleft palate and micrognathia. Additional five family members sequenced.",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-27",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2B96"
+    },
+    {
+      "title": "FB0094_Trio WES_ Male proband with unilateral cleft lip and palate, complete situs inversus",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-27",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2B92"
+    },
+    {
+      "title": "FB0107 Cleft palate, dysplastic ears, short stature, linear hyperpigmented streaks on skin, hearing loss, scoliosis, tetralogy of fallot",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-27",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2B9Y"
+    },
+    {
+      "title": "Whole-genome transcriptome profiling of E14.5 Wnt1-Cre;Alk5flfl by microarray of maxilla and mandible",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-21",
+      "summary": "We performed the global gene expression profiling analysis of the proximal (P ) and distal (D) regions of the mandible and proximal (P ) and distal (D) regions of the maxilla using microarray. Total RNA samples (1 ug per sample) were converted into biotin-labeled cRNA using the GeneChip&reg; IVT Labeling Kit and standard protocols recommended by Affymetrix (Santa Clara, CA). Fragmented cRNA was applied to GeneChip, M",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2A8Y"
+    },
+    {
+      "title": "RNAseq of Wnt1cre;Tgfbr2fl/fl mutants and controls at E10.5",
+      "kind": "FaceBase dataset",
+      "date": "2018-02-21",
+      "summary": "E10.5 mandible of mutants and controls were dissected and processed using RNeasy Micro kit (QIAGEN).",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2AHY"
+    },
+    {
+      "title": "Cell Proliferation Heat Map of E14.5 Maxilla",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-08",
+      "summary": "Samples from E14.5 mice were collected and embedded in paraffin. Samples were sectioned through a coronal view at 7uM. Heat maps were generated from TIFF images using Amira 6.0. E14.5 heat maps showed cellular proliferation in the mandibular and maxillary regions.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/26WR"
+    },
+    {
+      "title": "Whole-genome transcriptome profiling of E13.5 Wnt1-Cre;Tgfbr2flfl by microarray of maxilla and mandible",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-08",
+      "summary": "We performed the global gene expression profiling analysis of the proximal (P ) and distal (D) regions of the mandible and proximal (P ) and distal (D) regions of the maxilla using microarray. Total RNA samples (1 ug per sample) were converted into biotin-labeled cRNA using the GeneChip&reg; IVT Labeling Kit and standard protocols recommended by Affymetrix (Santa Clara, CA). Fragmented cRNA was applied to GeneChip, M",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/26Y0"
+    },
+    {
+      "title": "Cell Proliferation Heat Map of E12.5 Mandible",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-08",
+      "summary": "Samples from E12.5 mice were collected and embedded in paraffin. Samples were sectioned through a coronal view at 7uM. All samples were stained with Ki67 and DAPI. Heat maps were generated from TIFF images using Amira 6.0. E12.5 heat maps showed cellular proliferation in the mandibular and maxillary regions.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/26VG"
+    },
+    {
+      "title": "Cell Proliferation Heat Map of E10.5 mouse embryo",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-06",
+      "summary": "Whole mount staining was used for E10.5 samples. All samples were stained with Ki67 and DAPI. E10.5 whole mount embryos were imaged using Optical Projection Tomography (OPT). Heat maps were generated from images using ImageJ and Amira. Heat maps for E10.5 whole mount embryos showed proliferative cells in specific regions of the embryo.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/26R8"
+    },
+    {
+      "title": "ChIP-seq and RNA-seq of mouse e13.5 nose",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-03",
+      "summary": "We have generated histone ChIP-seq libraries for dissected mouse nasal tissue. We performed ChIP-seq with markers of active chromatin (H3K27ac, H3K4me1) and repressive chromatin (H3K27me3). For each tissue we also generated a ChIP input library and total RNA-seq library. This is part of a series of experiments including parallel collection of dissected craniofacial tissues including maxilla, mandible and nose, and mu",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/2660"
+    },
+    {
+      "title": "MicroCT-Head Wnt1-Cre;Alk5fl/fl mouse at P0",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-03",
+      "summary": "This dataset includes microCT scans of the head tissue of Wnt1-Cre;Alk5fl/fl at P0 (YC391CCMB). The scans are in NiFTI format, which can be read by a number of free software applications including those listed below. To receive the scans in DICOM format, please email info@facebase.org. The following programs allow you to load and explore files in NiFTI format: -- ImageJ, a java-based program that runs on most operati",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/26FG"
+    },
+    {
+      "title": "MicroCT-Skull Wnt1-Cre;Alk5fl/fl mouse at P0",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-03",
+      "summary": "This dataset includes 1 microCT scan of the skull of a Wnt1-Cre;Alk5fl/fl mouse at P0 (YC391CCMB). The scan is in NiFTI format, which can be read by a number of free software applications including those listed below. To receive the scan in DICOM format, please email help@facebase.org. The following programs allow you to load and explore files in NiFTI format: – ImageJ, a java-based program that runs on most operatin",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/264C"
+    },
+    {
+      "title": "MicroCT-Skull Wnt1-Cre;Alk5fl/fl mouse at P0",
+      "kind": "FaceBase dataset",
+      "date": "2017-11-01",
+      "summary": "This dataset includes 1 microCT scan of the skull of a Wnt1-Cre;Alk5fl/fl mouse at P0 (YC389CCMB). The scan is in NiFTI format, which can be read by a number of free software applications including those listed below. To receive the scan in DICOM format, please email help@facebase.org. The following programs allow you to load and explore files in NiFTI format: -- ImageJ, a java-based program that runs on most operati",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/25K8"
+    },
+    {
+      "title": "FB0038_Blepharo-cheilo-dontic (BCD) syndrome aka Elschnig Syndrome_Trio Saliva_Candidate Gene: CDH1",
+      "kind": "FaceBase dataset",
+      "date": "2017-10-30",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the porband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/26V4"
+    },
+    {
+      "title": "Temporal analysis of ectoderm and mesenchyme small RNA expression in the developing mouse facial prominences",
+      "kind": "FaceBase dataset",
+      "date": "2017-09-11",
+      "summary": "Small RNAs (>200 nt) from microdissected ectoderm and mesenchyme of mandibular, maxillary, fronto-nasal processes at E10.5, E11.5 and E12.5, as well as olfactory pit epithelium at E11.5 and E12.5, we analyzed by microarray to measure expression of miRNAs, snoRNAs, scaRNAs, tRNAs, etc.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TK4"
+    },
+    {
+      "title": "3D White Light Photogrammetry Images of North American Children from Denver and San Francisco.",
+      "kind": "FaceBase dataset",
+      "date": "2017-09-06",
+      "summary": "3D White Light Photogrammetry Images of North American Children from Denver and San Francisco. **This is restricted-access human data.**  To gain access to this data, you must first go through the [process outlined here](/odocs/data-guidelines/).\n\nThe listing and corresponding checksums of all data files included in this dataset can be found in the [manifest file](https://www.facebase.org/id/3C-QJHM) in the Supplemen",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TK0"
+    },
+    {
+      "title": "Frontal suture, Fgfr2+/S252W (Apert syndrome mouse model), E16.5 and E18.5",
+      "kind": "FaceBase dataset",
+      "date": "2017-09-01",
+      "summary": "RNA-Seq libraries are from laser capture microdissections of C57BL/6J Apert syndrome EIIA-Cre+;Fgfr2+/S252W (A) mice, at development stages TS24/E16.5 (6) and TS26/E18.5 (8), from the frontal suture (IF), with 5 biological replicates (1-5), of the suture mesenchyme (SM) and frontal bone osteogenic front (FR). “A8IF1SM”, for example, indicates Apert, E18.5, frontal suture, replicate 1, suture mesenchyme.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TJP"
+    },
+    {
+      "title": "Temporal analysis of ectoderm and mesenchyme gene expression in the developing mouse facial prominences",
+      "kind": "FaceBase dataset",
+      "date": "2017-06-07",
+      "summary": "RNAseq of microdissected ectoderm, mesenchyme and olfactory pit epithelia from mouse mandibular, maxillary and frontonasal prominences at E10.5, E11.5 and E12.5.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TJA"
+    },
+    {
+      "title": "ChIP-seq of multiple histone marks and RNA-seq from CS22 human embryonic face tissue",
+      "kind": "FaceBase dataset",
+      "date": "2017-04-12",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development\n\nThis is restricted-access human data. To gain access to this data, you must first go through the [process outlined here](/odocs/data-guidelines/).\n\nThe listing and corresponding checksums of all data files included in this dataset can be found in the [manifest file](https://www.faceba",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TTR"
+    },
+    {
+      "title": "FB0021_14yo female with clinodactyly, camptodactyly of left index finger, delayed closure of the fontanel_Candiate Gene: DCHS1",
+      "kind": "FaceBase dataset",
+      "date": "2017-04-07",
+      "summary": "The purpose of this study is to collect, process, and study samples from individuals with known or possible genetic disease, and their family members. The study’s broad goals are to better understand the genetic causes of disease in order to improve the ability to diagnose, treat, and even prevent illness. Our goal is to obtain a genetic diagnosis for health problem(s) the proband has, so the information can be used,",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TPP"
+    },
+    {
+      "title": "ChIP-seq of multiple histone marks and RNA-seq from e11.5 mouse face subregions",
+      "kind": "FaceBase dataset",
+      "date": "2017-03-30",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TMJ"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - hs1603",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=1603&organism_id=1) to see associated data in the VISTA browser.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VXC"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - mm39",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=39&organism_id=2) to see associated data in the VISTA browser.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VXM"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - mm595",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=595&organism_id=2) to see associated data in the VISTA browser.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VFT"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - mm1166",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VXE"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - mm745",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=745&organism_id=2) to see associated data in the VISTA browser.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VPC"
+    },
+    {
+      "title": "p300 ChIP-seq experiment on mouse embryonic craniofacial tissue at e11.5",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "p300 ChIP-seq experiment on mouse embryonic craniofacial tissue (e11.5)",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TYM"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - hs1626",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=1626&organism_id=1) to see the associated data in the VISTA browser.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VXP"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - mm1215",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VY8"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - mm50",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=50&organism_id=2) to see the associated data in the VISTA browser.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TQW"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - hs1629",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=1629&organism_id=1) to see associated data in the VISTA browser. (Note that the VISTA Browser data from this link corresponds to E11.5 while the data shown in here is for E14.5)",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/V3M"
+    },
+    {
+      "title": "Transgenic Mouse Enhancer OPT Assays - hs1620",
+      "kind": "FaceBase dataset",
+      "date": "2017-02-06",
+      "summary": "ChIP-seq, RNA-seq and transgenic assays to identify non-coding regulatory elements (enhancers) active during craniofacial development.\n\nFollow this [link](http://enhancer.lbl.gov/cgi-bin/imagedb3.pl?form=presentation&show=1&experiment_id=1620&organism_id=1) to see the associated data in the VISTA browser.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/TSR"
+    },
+    {
+      "title": "Craniofacial phenotype analysis",
+      "kind": "FaceBase dataset",
+      "date": "2016-01-01",
+      "summary": "MicroCT images of E16.5, E18.5, and P0 controls for Wnt1-Cre;Tgfbr2fl/fl",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VDE"
+    },
+    {
+      "title": "Micro-CT images of adult mouse skulls, Collaborative Cross C57BL6 x AJ",
+      "kind": "FaceBase dataset",
+      "date": "2016-01-01",
+      "summary": "The dataset consists of a set of images for 20 mice with one parent from the C57BL/6 strain and the other from the A/J strain. For each mouse we provide an image file in .aim format, a .txt file with the image data, and a .hx file. Morphometrics will be added for the data as measurements are completed.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VMT"
     }
   ]
 }
