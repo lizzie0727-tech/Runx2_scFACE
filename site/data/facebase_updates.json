@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-19 01:41 UTC",
+  "updated_at": "2026-10-20 01:42 UTC",
   "source": "https://www.facebase.org/ermrest/catalog/1/entity/isa:dataset",
   "items": [
     {
@@ -899,6 +899,13 @@
       "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-713J"
     },
     {
+      "title": "Activity of human neural crest enhancer near THBS1 in E11.5 transgenic mouse embryo – Tg(hg19_chr15:39474113-39474612::LacZ).",
+      "kind": "FaceBase dataset",
+      "date": "2020-04-01",
+      "summary": "Tg(hg19_chr15:39474113-39474612::LacZ) human neural crest enhancer with biased activity in frontonasal process when compared to the orthologous chimpanzee sequence. There is also reproducible staining in the anterior forebrain, posterior maxillary prominence of the 1st branchial arch, and midgut.",
+      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/1-717A"
+    },
+    {
       "title": "Facial shape and allometry quantitative trait loci in the Diversity Outbred mouse",
       "kind": "FaceBase dataset",
       "date": "2020-02-06",
@@ -1394,13 +1401,6 @@
       "date": "2016-01-01",
       "summary": "MicroCT images of E16.5, E18.5, and P0 controls for Wnt1-Cre;Tgfbr2fl/fl",
       "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VDE"
-    },
-    {
-      "title": "Micro-CT images of adult mouse skulls, Collaborative Cross C57BL6 x AJ",
-      "kind": "FaceBase dataset",
-      "date": "2016-01-01",
-      "summary": "The dataset consists of a set of images for 20 mice with one parent from the C57BL/6 strain and the other from the A/J strain. For each mouse we provide an image file in .aim format, a .txt file with the image data, and a .hx file. Morphometrics will be added for the data as measurements are completed.",
-      "url": "https://www.facebase.org/ermrest/catalog/1/entity_rid/VMT"
     }
   ]
 }
